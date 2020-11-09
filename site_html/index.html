@@ -82,12 +82,27 @@
 </head>
 <body>
 <h1 id="teaching-tools-and-my-setups">Teaching Tools and My Setups</h1>
-<p>Hera are some tools that I am using for teaching.</p>
+<p>Hera are some tools that I am using for teaching <a href="http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html">Math 221, Fall</a>.</p>
 <h2 id="use-text2qti-to-handle-canvas-quiz-homework-and-exams">Use <em>Text2qti</em> to handle Canvas Quiz, homework and exams</h2>
 <ol type="1">
 <li>Here is the <a href="https://github.com/gpoore/text2qti/tree/8e16684fe18dbcacec1474fbde8e9bfeef4c5838">Text2qti</a> on Github.</li>
 <li>There are several examples on the Github page.</li>
-<li>Here are some more examples:</li>
+<li>Here are some more examples:
+<ul>
+<li><a href="scripts/SampleHomework.md.tex">Sample Homework</a> which includes
+<ul>
+<li>Five groups of problems. Each group contains 3-4 problems.</li>
+<li>One picks randomly one or two problems from each group.</li>
+<li>Ten points for each problem.</li>
+</ul></li>
+<li>If you use <a href="https://github.com/neovim/neovim">vim or neovim</a>, source the file <a href="scripts/command_qti.vim">comand_qti.vim</a> where
+<ul>
+<li>the fold method is set to <code>:set foldmethod=marker</code></li>
+<li>The command <code>&lt;leader&gt;&lt;leader&gt;</code> under normal mode will remove unnecessary <code>{{{</code> from the fold method to generate file without <code>.tex</code> and then it will run <code>text2qti</code> the newly generated file (without <code>.tex</code>) to generate a file with <code>.zip</code>.</li>
+<li>Now you can upload <code>.zip</code> file to Canvas.</li>
+<li>These steps are shown by <a href="scripts/SampleHomework.md.tex">SampleHomework.md.tex</a> –&gt; <a href="scripts/SampleHomework.md">SampleHomework.md</a> –&gt; <a href="scripts/SampleHomework.zip">SampleHomework.zip</a></li>
+</ul></li>
+</ul></li>
 </ol>
 <h2 id="use-vimwiki-to-generate-the-course-html-pages">Use <em>Vimwiki</em> to generate the course html pages</h2>
 <ol type="1">
@@ -127,6 +142,8 @@
 <li>Extract students emails using the script <a href="scripts/list_students.sh">list_student.sh</a>
 <ul>
 <li>This script also produces alias file for <a href="https://neomutt.org/">neomutt</a></li>
+<li>One can write scripts to schedule sending emails.</li>
+<li>Use <a href="https://linuxize.com/post/at-command-in-linux/">at</a> to make the schedule.</li>
 </ul></li>
 <li>A script to make announcements from terminal <a href="scripts/Create_Announcement.py">Create_Announcement.py</a></li>
 <li>A script to upload files to Canvas: …</li>
@@ -170,8 +187,29 @@
 </tr>
 </tbody>
 </table>
-<h2 id="markdown-related">Markdown related</h2>
+<ol start="4" type="1">
+<li>I wrote this script <a href="scripts/split.lua">split.lua</a> to split the textbook into sections as shown on my <a href="http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides">course page</a>.</li>
+</ol>
+<h1 id="video-processing-and-animation">Video processing and animation</h1>
 <ol type="1">
+<li>Use the Python package <a href="https://github.com/3b1b/manim">manim</a> by <em>3 Blue 1 Brown</em> to generate animation videos.
+<ul>
+<li>Here are some <a href="https://talkingphysics.wordpress.com/2019/01/08/getting-started-animating-with-manim-and-python-3-7/">examples</a> to walk through.</li>
+</ul></li>
+<li>The video file should be <code>mmdd_S#.mp4</code>, <code>#</code> be replaced by <code>5,6,7</code>.</li>
+<li><code>cp 0917_S6_content.txt mmdd_S#_content.txt</code> Edit the this content file for the section names and etc.</li>
+<li><code>cp SA-B.txt SA-B_S#.txt</code> with A-B means Section A.B.</li>
+<li>Edit <code>SA-B_S#.txt</code> and run <code>./GenTitleVideo.sh SA-B_S#</code> (without extension) to generate the title videos</li>
+<li>Finally, run <code>./splitvideo.lua mmdd_S# mmdd_S#_content.txt</code> to see the command to be executed. If all looks good, run</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>$ <span class="ex">splitvideo.lua</span> mmdd_S# mmdd_S#_content.txt yes</span></code></pre></div>
+<ol start="7" type="1">
+<li>Here is the script <a href="scripts/splitvideo.lua">splitvideo lua</a>. This script depends on
+<ol type="1">
+<li><a href="https://github.com/3b1b/manim">manim</a>: used to generate the animation title videos.</li>
+<li><a href="https://ffmpeg.org/">ffmpeg</a>: used to split long course videos to short ones.</li>
+<li><a href="https://github.com/gpac/gpac/wiki/MP4Box">MP4Box</a>: used to combine animation video (without sound track with my course videos) ## Markdown related</li>
+</ol></li>
 <li>Use <a href="https://github.com/joeyespo/grip">Grip</a> to see how the Markdown file looks on Github.
 <ul>
 <li>Once it is installed, cd into the directory of the Markdown files. Then run <code>grip</code>.</li>
@@ -180,6 +218,6 @@
 </ul></li>
 <li>Or one can use <a href="https://pandoc.org/">Pandoc</a> to convert README.md to index.html by running (this only gives an approximate view)</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>$ <span class="ex">pandoc</span> -s README.md -o ./site_html/index.html</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>$ <span class="ex">pandoc</span> -s README.md -o ./site_html/index.html</span></code></pre></div>
 </body>
 </html>
