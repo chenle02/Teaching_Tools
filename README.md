@@ -77,7 +77,7 @@ $ Rscript weights.r
 ```sh
 $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
-7. Here is the script [splitvidoe lua](scripts/splitvidoe.lua)
+7. Here is the script [splitvideo lua](scripts/splitvideo.lua)
 ## Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
     * Once it is installed, cd into the directory of the Markdown files. Then run `grip`.
