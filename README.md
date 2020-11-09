@@ -92,6 +92,7 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
     2. [ffmpeg](https://ffmpeg.org/): used to split long course videos to short ones.
     3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
+
 ## Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
     * Once it is installed, cd into the directory of the Markdown files. Then run `grip`.
@@ -101,3 +102,14 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```sh
 $ pandoc -s README.md -o ./site_html/index.html
 ```
+## Other misc tools
+Here are a list of tools that are handy:
+1. [fzf](https://github.com/junegunn/fzf)
+2. [tmux](https://github.com/tmux/tmux/wiki)
+3. [rofi](https://github.com/davatorium/rofi)
+4. [calcurse](https://github.com/lfos/calcurse)
+5. [qutebrowser](https://github.com/qutebrowser/qutebrowser)
+6. [lazygit](https://github.com/jesseduffield/lazygit) and [tig](https://github.com/jonas/tig)
+8. [abook](https://github.com/hhirsch/abook)
+9. [neomutt](https://github.com/neomutt/neomutt)
+10. [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
