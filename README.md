@@ -16,6 +16,96 @@ Hera are some tools that I am using for teaching [Math 221, Fall](http://math.em
 		and then it will run `text2qti` the newly generated file (without `.tex`) to generate a file with `.zip`.
 	    * Now you can upload `.zip` file to Canvas.
 	    * These steps are shown by [SampleHomework.md.tex](scripts/SampleHomework.md.tex) --> [SampleHomework.md](scripts/SampleHomework.md) --> [SampleHomework.zip](scripts/SampleHomework.zip) 
+4. Here are some more tricks that I am using to speed up the process.
+    * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
+    * Create the quickmarks first 
+```sh
+m0 https://emory.instructure.com/courses/66586/modules
+m1 https://emory.instructure.com/courses/83803/modules
+m2 https://emory.instructure.com/courses/83638/modules
+m3 https://emory.instructure.com/courses/84892/modules
+m4 https://emory.instructure.com/courses/84083/modules
+m5 https://emory.instructure.com/courses/79158/modules
+m6 https://emory.instructure.com/courses/76203/modules
+m7 https://emory.instructure.com/courses/78323/modules
+a0 https://emory.instructure.com/courses/66586/announcements
+a1 https://emory.instructure.com/courses/83803/announcements
+a2 https://emory.instructure.com/courses/83638/announcements
+a3 https://emory.instructure.com/courses/84892/announcements
+a4 https://emory.instructure.com/courses/84083/announcements
+a5 https://emory.instructure.com/courses/79158/announcements
+a6 https://emory.instructure.com/courses/76203/announcements
+a7 https://emory.instructure.com/courses/78323/announcements
+q0 https://emory.instructure.com/courses/66586/quizzes
+q1 https://emory.instructure.com/courses/83803/quizzes
+q2 https://emory.instructure.com/courses/83638/quizzes
+q3 https://emory.instructure.com/courses/84892/quizzes
+q4 https://emory.instructure.com/courses/84083/quizzes
+q5 https://emory.instructure.com/courses/79158/quizzes
+q6 https://emory.instructure.com/courses/76203/quizzes
+q7 https://emory.instructure.com/courses/78323/quizzes
+s0 https://emory.instructure.com/courses/66586/assignments/syllabus
+s1 https://emory.instructure.com/courses/83803/assignments/syllabus
+s2 https://emory.instructure.com/courses/83638/assignments/syllabus
+s3 https://emory.instructure.com/courses/84892/assignments/syllabus
+s4 https://emory.instructure.com/courses/84083/assignments/syllabus
+s5 https://emory.instructure.com/courses/79158/assignments/syllabus
+s6 https://emory.instructure.com/courses/76203/assignments/syllabus
+s7 https://emory.instructure.com/courses/78323/assignments/syllabus
+```
+    * Create Zsh alias function to open all courses side by side
+```sh
+qba_fall() {
+    qutebrowser ":quickmark-load -t a5 ;; tab-give"
+    qutebrowser ":quickmark-load -t a6 ;; tab-give"
+    qutebrowser ":quickmark-load -t a7 ;; tab-give"
+    }
+qba_spring() {
+    qutebrowser ":quickmark-load -t a1 ;; tab-give"
+    qutebrowser ":quickmark-load -t a2 ;; tab-give"
+    qutebrowser ":quickmark-load -t a3 ;; tab-give"
+    qutebrowser ":quickmark-load -t a4 ;; tab-give"
+    }
+qbq_fall() {
+    qutebrowser ":quickmark-load -t q0 ;; tab-give"
+    qutebrowser ":quickmark-load -t q5 ;; tab-give"
+    qutebrowser ":quickmark-load -t q6 ;; tab-give"
+    qutebrowser ":quickmark-load -t q7 ;; tab-give"
+    }
+qbq_spring() {
+    qutebrowser ":quickmark-load -t q0 ;; tab-give"
+    qutebrowser ":quickmark-load -t q1 ;; tab-give"
+    qutebrowser ":quickmark-load -t q2 ;; tab-give"
+    qutebrowser ":quickmark-load -t q3 ;; tab-give"
+    qutebrowser ":quickmark-load -t q4 ;; tab-give"
+    }
+
+qbm_fall() {
+    qutebrowser ":quickmark-load -t m0 ;; tab-give"
+    qutebrowser ":quickmark-load -t m5 ;; tab-give"
+    qutebrowser ":quickmark-load -t m6 ;; tab-give"
+    qutebrowser ":quickmark-load -t m7 ;; tab-give"
+    }
+qbm_spring() {
+    qutebrowser ":quickmark-load -t m0 ;; tab-give"
+    qutebrowser ":quickmark-load -t m1 ;; tab-give"
+    qutebrowser ":quickmark-load -t m2 ;; tab-give"
+    qutebrowser ":quickmark-load -t m3 ;; tab-give"
+    qutebrowser ":quickmark-load -t m4 ;; tab-give"
+    }
+qbs_fall() {
+    qutebrowser ":quickmark-load -t s5 ;; tab-give"
+    qutebrowser ":quickmark-load -t s6 ;; tab-give"
+    qutebrowser ":quickmark-load -t s7 ;; tab-give"
+    }
+qbs_spring() {
+    qutebrowser ":quickmark-load -t s1 ;; tab-give"
+    qutebrowser ":quickmark-load -t s2 ;; tab-give"
+    qutebrowser ":quickmark-load -t s3 ;; tab-give"
+    qutebrowser ":quickmark-load -t s4 ;; tab-give"
+    }
+alias qbwin_only='qutebrowser ":window-only"'
+``` 
 
 ## Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
@@ -104,12 +194,17 @@ $ pandoc -s README.md -o ./site_html/index.html
 ```
 ## Other misc tools
 Here are a list of tools that are handy:
-1. [fzf](https://github.com/junegunn/fzf)
-2. [tmux](https://github.com/tmux/tmux/wiki)
-3. [rofi](https://github.com/davatorium/rofi)
-4. [calcurse](https://github.com/lfos/calcurse)
-5. [qutebrowser](https://github.com/qutebrowser/qutebrowser)
-6. [lazygit](https://github.com/jesseduffield/lazygit) and [tig](https://github.com/jonas/tig)
-8. [abook](https://github.com/hhirsch/abook)
-9. [neomutt](https://github.com/neomutt/neomutt)
-10. [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
+1. [fzf: A command-line fuzzy finder](https://github.com/junegunn/fzf)
+2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim: Vim-fork focused on extensibility and usability](https://github.com/neovim/neovim)
+4. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
+5. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
+7. [qutebrowser/qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
+9. [lazygit: simple terminal UI for git commands](https://github.com/jesseduffield/lazygit) and [tig: Text-mode interface for git](https://github.com/jonas/tig)
+10. [neomutt](https://github.com/neomutt/neomutt) configured through [LukeSmithxyz/mutt-wizard: A
+   system for automatically configuring mutt and isync with a simple interface and safe
+   passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address
+   book.
+11. [abook: CLI Address book](https://github.com/hhirsch/abook)
+12. [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
+13. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
+14. [awesome window manager](https://awesomewm.org/)
