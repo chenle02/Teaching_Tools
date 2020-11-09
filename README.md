@@ -65,9 +65,10 @@ $ Rscript weights.r
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Section 3-2. Determinants and Matrix Inverses | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Handout.pdf) |
 | Section 3-3. Diagonalization and Eigenvalues  | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Handout.pdf) |
+4. I wrote this script [split.lua](scripts/split.lua) to split the textbook into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides).
 
 # Video processing and animation
-1. Use the Python package [manim]( https://github.com/3b1b/manim ) by _3 Blue 1 Brown_ to generate animation videos.
+1. Use the Python package [manim](https://github.com/3b1b/manim) by _3 Blue 1 Brown_ to generate animation videos.
     * Here are some [examples]( https://talkingphysics.wordpress.com/2019/01/08/getting-started-animating-with-manim-and-python-3-7/ ) to walk through.
 2. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
 3. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
@@ -77,7 +78,10 @@ $ Rscript weights.r
 ```sh
 $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
-7. Here is the script [splitvideo lua](scripts/splitvideo.lua)
+7. Here is the script [splitvideo lua](scripts/splitvideo.lua). This script depends on 
+    1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
+    2. [ffmpeg](https://ffmpeg.org/): used to split long course videos to short ones.
+    3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
 ## Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
     * Once it is installed, cd into the directory of the Markdown files. Then run `grip`.
