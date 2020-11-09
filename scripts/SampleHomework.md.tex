@@ -1,0 +1,309 @@
+Quiz title: HW11 -- Chapter 6 Vector Spaces
+Quiz description: Covers Sections 6.1 -- 6.3.
+
+GROUP
+Pick: 2
+Points per question: 10
+% Bank 6, problems 1 - 5, Concepts {{{
+1.  Determine when $V$ is a vector space with the given operations: %{{{
+[ ] $V$ is the set $\mathbb{Q}$ of all rational numbers (fractions); usual operations.
+[ ] $V=\{r\in\mathbb{R}\mid r\geq0\}$ with the usual operations.
+[*] $V=\{\mathbf{0}\}$ where $\mathbf{0}\oplus\mathbf{0}=\mathbf{0}$ and $a\odot\mathbf{0}=\mathbf{0}$ for each $a$.
+[ ] $V=\mathbb{R}^{4}$, usual addition and $a\odot(x,y,z)=(x,y,z)$.
+[*] $V$ is the set of all continuous functions $[0,1]\rightarrow\mathbb{R}$.
+[ ] $V=\,$the set of all $2\times2$ matrices with $A\oplus B=A^{T}+B^{Y}$ and $a\odot A=aA^{T}$.
+[*] $V=\{x\in\mathbb{R}\mid x>0\};$ with $x\oplus y=xy$ and $a\odot x=x^{a}$.
+[ ] $V=\mathbb{R}^{4}$, usual addition and $a\odot(x,y,z)=(0,0,0)$.
+% \extbf{Answer}: \underline{c) , e)  and (g)}.
+% $$\pi\pi\qquad  (1)  qquad\pi\pi$$}}}
+2.  Which of the following are vector spaces?  <br>%{{{
+    (i)  all functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(3)=0$, together with the usual vector operations on real-valued functions.<br>
+    (ii)  all polynomials whose degree is exactly $3$, together with the usual vector operations on polynomials.<br>
+    (iii)  all $2\times4$ real matrices $A$ whose entries are positive, together with the usual vector operations on matrices.<br>
+a)  (i)  and (ii)
+b)  (i) and (iii)
+c)  (ii)  and (iii)
+*d) (i)  only
+e)  (ii)  only
+f)  (iii)  only
+% \textbf{Answer}: \underline{(i)  only}.
+% $$\pi\pi\qquad  (2)   qquad\pi\pi$$}}}
+3.  Consider the following sets with operations:<br> %{{{
+    (i)  $V=\left\{(x,y)\in\mathbb{R}^{2}\mid x-y=1\right\}$, equipped with the standard vector operations on $\mathbb{R}^{2}.$<br>
+    (ii)  $W=\left\{(x,y,z)\in\mathbb{R}^{3}\mid x,y,z\text{ are rational} \right\}$, equipped with the standard vector operations on $\mathbb{R}^{3}.$<br>
+    (iii)  $\mathbb{R}^{2}$ with addition defined by $(x,y)\oplus(x^{\prime},y^{\prime})=(x-x^{\prime},y-y^{\prime})$ and the standard multiplication by scalars.<br>
+    Choose the correct statement below:
+*a) (i), (ii)  and (iii)  are vector spaces over $\mathbb{R}$.
+b)  Only (i)  and (ii)  are vector spaces over $\mathbb{R.}$
+c)  Only (ii)  and (iii)  are vector spaces over $\mathbb{R}$.
+d)  Only (i)  and (iii)  are vector spaces over $\mathbb{R}$.
+e)  Only (i)  is a vector space over $\mathbb{R}$.
+f)  None of (i), (ii)  and (iii)  are vector spaces over $\mathbb{R}$.
+% \textbf{Answer}: \underline{None of (i), (ii)  and (iii)  are vector spaces over $\mathbb{R}$}$$.
+% $$\pi\pi\qquad  (3)   qquad\pi\pi$$}}}
+4.  If we give $L=\mathbb{R}^{2}$ the non-standard vector operations <br>%{{{
+    (1) $(x,y)\oplus(x^{\prime},y^{\prime}) = (x+x^{\prime}-9,y+y^{\prime})$ (Vector addition)<br>
+    (2) $k\otimes (x,y)=(kx-9k+9,ky)$ (Multiplication by scalar $k$)<br>
+    then $L$ is a vector space over $\mathbb{R}$. What is the ``zero'' vector of $L$?
+a)  $(0,0)$
+b)  $(-9,0)$
+*c) $(9,0)$
+d)  $(18,0)$
+e)  $(9,9)$
+f)  $(0,-9)$
+% \textbf{Answer}: \underline{$(9,0)$}$$.
+% $$\pi\pi\qquad  (4)   qquad\pi\pi$$}}}
+5.  If we give $W=\mathbb{R}^{2}$ the non-standard vector operations <br> %{{{
+    (1) $(x,y)\oplus(x^{\prime},y^{\prime}) = \left(x+x^{\prime}+11,y+y^{\prime }\right)$ (Vector addition) <br>
+    (2)	$k\otimes (x,y)  = (kx+11k-11,ky)$ (Multiplication by $k$)<br>
+    then $W$ is a vector space over $\mathbb{R}$. If $\mathbf{v}=(x,y)$, then what is $-\mathbf{v}$?
+a)  $\left(-x,-y\right)$
+b)  $\left(-x+11,-y\right)$
+c)  $\left( x-11,-y\right)$
+d)  $\left(-x-11,-y\right)$
+*e) $\left(-x-22,-y\right)$
+f)  $\left(-x+22,-y\right)$
+% \textbf{Answer}: \underline{$\left(-x-22,-y\right)$}$$.
+% $$\pi\pi\qquad  (5)   qquad\pi\pi$$}}}
+END_GROUP
+% }}}
+
+GROUP
+Pick: 2
+Points per question: 10
+% Bank 6, 4 problems, Dimensions for Matrices {{{
+22. Find the dimension of $U$ if $U=\{X\in\mathbf{M}_{33}\mid X^{T}=2X\}$. %{{{
+a)  2
+b)  1
+*c) 0
+d)  3
+% \textbf{Answer}: \underline{c) }$$.
+% $$\pi\pi\qquad  (22)   qquad\pi\pi$$}}}
+40. Let $J=\left[ %{{{
+    \begin{array}[c]{rr}
+	0 &  -1\\
+	1 &  0
+    \end{array}
+    \right]$. The dimension of $C=\left\{  A\in\mathbf{M}_{22}\mid JA=AJ\right\}$ is:
+a)  $0$
+b)  $1$
+*c) $2$
+d)  $3$
+e)  $4$
+f)  $5$
+% \textbf{Answer}: \underline{$2$}$$.
+% $$\pi\pi\qquad  (40)   qquad\pi\pi$$}}}
+42. $S=\left\{  A\in\mathbf{M}_{22}\mid A=A^{T}\right\}$ is the subspace of symmetric matrices. The dimension of $S$ is: %{{{
+a)  $0$
+b)  $1$
+c)  $2$
+*d) $3$
+e)  $4$
+f)  $5$
+% \textbf{Answer}: \underline{$3$}$$.
+% $$\pi\pi\qquad  (42)   qquad\pi\pi$$}}}
+51. Find $dim(U)$ if $U=span\left\{\left[ %{{{
+    \begin{array}[c]{cc}
+	1 &  -1\\
+	1 &  1
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	-1 &  1\\
+	-1 &  1
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	1 &  -1\\
+	1 &  0
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	1 &  -1\\
+	0 &  1
+    \end{array}
+    \right],\right\}  :$
+a)  1
+b)  4
+*c) 3
+d)  2
+% \textbf{Answer}: \underline{c)}$$.
+% $$\pi\pi\qquad  (51)   qquad\pi\pi$$}}}
+END_GROUP
+% }}}
+
+GROUP
+Pick: 2
+Points per question: 10
+% Bank 6, 4 problems, Dimensions for polynomials {{{
+26. Find the dimension of $U$ if $U=\{p(x)\in\mathbf{P}_{2}\mid p(0)=p(1)\}$. %{{{
+a)  0
+b)  1
+*c) 2
+d)  None of these
+% \textbf{Answer}: \underline{c) }$$.
+% $$\pi\pi\qquad  (26)   qquad\pi\pi$$}}}
+34. Find the dimension of $U$ if $U=\,$span$\{1,$ sin$^{2} (x),\,$cos$^{2}(x)\}$, a subspace of $F[-\pi,\pi]$. where %{{{
+a)  1
+*b) 2
+c)  0
+d)  non of these
+% \textbf{Answer}: \underline{(2)}$$.
+% $$\pi\pi\qquad  (34)   qquad\pi\pi$$}}}
+41. The dimension of $V=\left\{  p(x)\in\mathbf{P}_{3}\mid p(x)=p(-x)\right\}$ is: %{{{
+a)  $0$
+b)  $1$
+*c) $2$
+d)  $3$
+e)  $4$
+f)  $5$
+% \textbf{Answer}: \underline{$2$}$$.
+% $$\pi\pi\qquad  (41)   qquad\pi\pi$$}}}
+49. Find $dim(U)$ if $U=span\left\{  1-x+x^{2}+x^{3},1+x+x^{2}-x^{3},1+x^{2},x-x^{3}\right\}  :$ %{{{
+a)  3
+b)  4
+*c) 2
+d)  1
+% \textbf{Answer}: \underline{c)}$$.
+% $$\pi\pi\qquad  (49)   qquad\pi\pi$$}}}
+END_GROUP
+% }}}
+
+GROUP
+Pick: 2
+Points per question: 10
+% Bank 6, 4 problems, Find basis {{{
+20. Find a basis of the vector space %{{{
+    $U=\{A\in\mathbf{M}_{22}\mid AB=B^{T}A\}$ where $B=\left[
+    \begin{array}[c]{cc}
+	1 &  1\\
+	0 &  0
+    \end{array}
+    \right]$.
+*a) $\left\{\left[
+    \begin{array}[c]{cc}
+	1 &  1\\
+	1 &  0
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	0 &  0\\
+	0 &  1
+    \end{array}
+    \right]  \right\}$
+b)  $\left\{\left[
+    \begin{array}[c]{cc}
+	0 &  0\\
+	0 &  1
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	0 &  1\\
+	1 &  0
+    \end{array}
+    \right]  \right\}$
+c)  $\left\{\left[
+    \begin{array}[c]{cc}
+	1 &  1\\
+	1 &  0
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	1 &  0\\
+	0 &  0
+    \end{array}
+    \right]  \right\}$
+d)  $\left\{\left[
+    \begin{array}[c]{cc}
+	1 &  0\\
+	0 &  0
+    \end{array}
+    \right],\left[
+    \begin{array}[c]{cc}
+	0 &  0\\
+	0 &  1
+    \end{array}
+    \right]  \right\}$
+% \textbf{Answer}: \underline{$\left\{\left[
+% \begin{array}[c]{cc}
+%     1 &  1\\
+%     1 &  0
+% \end{array}
+% \right],\left[
+% \begin{array}[c]{cc}
+%     0 &  0\\
+%     0 &  1
+% \end{array}
+% \right]  \right\}$}$$.
+% $$\pi\pi\qquad  (20)   qquad\pi\pi$$}}}
+36. Let $U=\left\{  p(x)\in\mathbf{P}_{3}\mid p(0)=p(1)=0\right\}$. A basis for $U$ is: %{{{
+a)  $\left\{x-1,x^{2}-1,x^{2}-x\right\}$
+b)  $\left\{1,x,x^{2},x^{3}\right\}$
+c)  $\left\{0,x-1,x^{2}-1\right\}$
+d)  $\left\{x-1,x^{2}-1\right\}$
+e)  $\left\{x,x^{2}-x\right\}$
+*f) $\left\{x^{2}-x,x^{3}-x^{2}\right\}$
+% \textbf{Answer}: \underline{$\left\{  x^{2}-x,x^{3}-x^{2}\right\}$}$$.
+% $$\pi\pi\qquad  (36)   qquad\pi\pi$$}}}
+38. Let $\mathbf{P}_{2}$ be the vector space of all polynomials of degree less than or equal to $2$. Which of the following is a basis for $\mathbf{P}_{2}$? %{{{
+a)  $\left\{1-3x+2x^{2},1+x+4x^{2},1-7x\right\}$
+b)  $\left\{(4+6x+x^{2},-1+4x+2x^{2},5+2x-x^{2}\right\}$
+*c) $\left\{1+x+x^{2},x+x^{2},x^{2}\right\}$
+d)  $\left\{1+x-x^{2},1+x+x^{2}\right\}$
+e)  $\left\{1-4x,2x-x^{2}\right\}$
+f)  $\left\{5-2x^{2},x^{2}\right\}$
+% \textbf{Answer}: \underline{$\left\{  1+x+x^{2},x+x^{2},x^{2}\right\}$}$$.
+% $$\pi\pi\qquad  (38)   qquad\pi\pi$$}}}
+39. Which of the following is a basis of the subspace $U=\{p(x)\mid p(-1)=0\}$ of $\mathbf{P}_{3}$? %{{{
+[*] $\left\{1+x,1-x^{2},1+x^{3}\right\}$
+[ ] $\left\{1+x^{3},x-x^{3},x^{2}+x^{3}\right\}$
+[*] $\left\{1+x,x+x^{2},x^{2}+x^{3}\right\}$
+[ ] $\left\{1+x+x^{2},x+x^{2},x^{2}\right\}$
+[ ] $\left\{1+x+x^{2}+x^{3},1+x^{3}\right\}$
+[ ] $\left\{\left\{ 1+x+x^{2}+x^{3},1+x,1+x^{2},1+x^{3}\right\}  \right\}$
+% \textbf{Answer}: \underline{a), c) }$$.
+% $$\pi\pi\qquad  (39)   qquad\pi\pi$$}}}
+END_GROUP
+% }}}
+
+GROUP
+Pick: 1
+Points per question: 10
+% Bank 6, 3 problems, Abstract Dimensions {{{
+52. Let $\{\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3},\mathbf{v}_{4}\}$ %{{{
+    be a basis of a vector space $V$. The dimension of $U=span\{\mathbf{v}
+    _{1}+\mathbf{v}_{2},\mathbf{v}_{2}+\mathbf{v}_{3},\mathbf{v}_{3}
+    +\mathbf{v}_{4},\mathbf{v}_{4}+\mathbf{v}_{1}\}$ is:
+a)  $0$
+b)  $2$
+*c) $3$
+d)  $4$
+e)  $5$
+% \textbf{Answer}: \underline{c)}$$.
+% $$\pi\pi\qquad  (52)   qquad\pi\pi$$}}}
+53. Let $\{\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3},\mathbf{v}_{4}\}$ %{{{
+    be a basis of a vector space $V$. The dimension of $U=span\{\mathbf{v}
+    _{1}-\mathbf{v}_{2},\mathbf{v}_{2}-\mathbf{v}_{3},\mathbf{v}_{3}
+    -\mathbf{v}_{4},\mathbf{v}_{4}-\mathbf{v}_{1}\}$ is:
+a)  $0$
+b)  $2$
+*c) $3$
+d)  $4$
+e)  $5$
+% \textbf{Answer}: \underline{c)}$$.
+% $$\pi\pi\qquad  (53)   qquad\pi\pi$$}}}
+54. Let $\{\mathbf{v}_{1},\mathbf{v}_{2},\mathbf{v}_{3}\}$ be a basis of a %{{{
+    vector space $V$. The dimension of $U=span\{\mathbf{v}_{1}+\mathbf{v}
+    _{2}+\mathbf{v}_{3},\mathbf{v}_{2}+2\mathbf{v}_{3},\mathbf{v}_{3}
+    -\mathbf{v}_{1}\}$ is:
+*a) $2$
+b)  $0$
+c)  $3$
+d)  $4$
+e)  $5$
+% \textbf{Answer}: \underline{a)}$$.
+% $$\pi\pi\qquad  (54)   qquad\pi\pi$$}}}
+END_GROUP
+% }}}
+COMMENT
+END_COMMENT

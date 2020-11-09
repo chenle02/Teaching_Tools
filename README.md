@@ -6,6 +6,16 @@ Hera are some tools that I am using for teaching.
 1. Here is the [Text2qti]( https://github.com/gpoore/text2qti/tree/8e16684fe18dbcacec1474fbde8e9bfeef4c5838)  on Github.
 2. There are several examples on the Github page.
 3. Here are some more examples:
+    * [Sample Homework](scripts/SampleHomework.md.tex) which includes
+	    * Five groups of problems. Each group contains 3-4 problems.
+	    * One picks randomly one or two problems from each group.
+	    * Ten points for each problem.
+    * If you use [vim or neovim](https://github.com/neovim/neovim), source the file [comand_qti.vim](scripts/command_qti.vim) where
+	    * the fold method is set to `:set foldmethod=marker`
+	    * The command `<leader><leader>` under normal mode will remove unnecessary `{{{` from the fold method to generate file without `.tex`
+		and then it will run `text2qti` the newly generated file (without `.tex`) to generate a file with `.zip`.
+	    * Now you can upload `.zip` file to Canvas.
+	    * These steps are shown by [SampleHomework.md.tex](scripts/SampleHomework.md.tex) --> [SampleHomework.md](scripts/SampleHomework.md) --> [SampleHomework.zip](scripts/SampleHomework.zip) 
 
 ## Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
