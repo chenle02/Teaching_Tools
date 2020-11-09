@@ -36,6 +36,7 @@ $ Rscript weights.r
 
 ## Use _Canvas API_ to access and handle Canvas pages.
 1. Use
+2. Extract students emails using the script [list_student.sh](scripts/list_students.sh)
 
 ## Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
@@ -48,6 +49,7 @@ $ Rscript weights.r
     * Blue:	  #4984F2
     * Purple: 	  #A87DFF
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
+
 
 ## Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see the Markdown file in the real time.
