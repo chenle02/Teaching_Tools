@@ -1,5 +1,5 @@
-# Teaching Tools
-
+# Teaching Tools and My Setups
+ 
 Hera are some tools that I am using for teaching.
 
 ## Use _Text2qti_ to handle Canvas Quiz, homework and exams
@@ -35,8 +35,18 @@ $ Rscript weights.r
 ```
 
 ## Use _Canvas API_ to access and handle Canvas pages.
-1. Use
-2. Extract students emails using the script [list_student.sh](scripts/list_students.sh)
+1. Canvas API is specified here: [Cavnas LMS](https://canvas.instructure.com/doc/api/) 
+2. Here is a convenient Python wrapper for this API: [canvasapi](https://github.com/ucfopen/canvasapi)
+3. The first thing is to obtain the `Canvas API KEY`. For this following the steps here:
+    * [How do I obtain an API access token in the Canvas Data Portal?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-obtain-an-API-access-token-in-the-Canvas-Data-Portal/ta-p/157)
+5. Extract students emails using the script [list_student.sh](scripts/list_students.sh)
+    * This script also produces alias file for [neomutt](https://neomutt.org/)
+    * One can write scripts to schedule sending emails.
+    * Use [at](https://linuxize.com/post/at-command-in-linux/) to make the schedule.
+7. A script to make announcements from terminal [Create_Announcement.py](scripts/Create_Announcement.py)
+8. A script to upload files to Canvas: ... 
+9. A script to copy modules pages ....
+10. A script to remove modules pages ....
 
 ## Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
@@ -49,10 +59,19 @@ $ Rscript weights.r
     * Blue:	  #4984F2
     * Purple: 	  #A87DFF
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
-
+3. Below are some example slides (see the [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html) for a complete set of slides for the class of linear algebra)
+ 
+| Chapter/Section                               | Slides                                                                                        | Slides                                                                              |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Section 3-2. Determinants and Matrix Inverses | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Handout.pdf) |
+| Section 3-3. Diagonalization and Eigenvalues  | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Handout.pdf) |
 
 ## Markdown related
-1. Use [Grip](https://github.com/joeyespo/grip) to see the Markdown file in the real time.
-2. Once it is installed, cd into the directory of the Markdown files. Then run `grip`.
-3. Open a browser with the following link: [http://localhost:6419/](http://localhost:6419/).
-
+1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
+    * Once it is installed, cd into the directory of the Markdown files. Then run `grip`.
+    * Open a browser with the following link: [http://localhost:6419/](http://localhost:6419/).
+    * It seems that the free version allows you to use 60 requests per hour.
+2. Or one can use [Pandoc](https://pandoc.org/) to convert README.md to index.html by running (this only gives an approximate view)
+```sh
+$ pandoc -s README.md -o ./site_html/index.html
+```
