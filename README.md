@@ -16,6 +16,7 @@ Hera are some tools that I am using for teaching [Math 221, Fall](http://math.em
 		and then it will run `text2qti` the newly generated file (without `.tex`) to generate a file with `.zip`.
 	    * Now you can upload `.zip` file to Canvas.
 	    * These steps are shown by [SampleHomework.md.tex](scripts/SampleHomework.md.tex) --> [SampleHomework.md](scripts/SampleHomework.md) --> [SampleHomework.zip](scripts/SampleHomework.zip) 
+	    * Then you need to upload this to Canvas following the steps here: [How do I import quizzes from QTI packages? - Canvas Community](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-import-quizzes-from-QTI-packages/ta-p/1046)
 4. Here are some more tricks that I am using to speed up the process.
     * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
     * Create the quickmarks first 
@@ -53,7 +54,7 @@ s5 https://emory.instructure.com/courses/79158/assignments/syllabus
 s6 https://emory.instructure.com/courses/76203/assignments/syllabus
 s7 https://emory.instructure.com/courses/78323/assignments/syllabus
 ```
-    * Create Zsh alias function to open all courses side by side
+* Create Zsh alias function to open all courses side by side
 ```sh
 qba_fall() {
     qutebrowser ":quickmark-load -t a5 ;; tab-give"
@@ -144,9 +145,10 @@ $ Rscript weights.r
     * One can write scripts to schedule sending emails.
     * Use [at](https://linuxize.com/post/at-command-in-linux/) to make the schedule.
 7. A script to make announcements from terminal [Create_Announcement.py](scripts/Create_Announcement.py)
-8. A script to upload files to Canvas: ... 
-9. A script to copy modules pages ....
-10. A script to remove modules pages ....
+8. A script to upload Homework to Canvas and show it on Module Page: [Upload_HW.py](./scripts/Upload_HW.py)
+9. A script to copy modules pages: [Copy_ExternalTools.py](./scripts/Copy_ExternalTools.py) 
+10. A script to list modules pages: [Copy_ExternalTools_test.py](./scripts/Copy_ExternalTools_test.py)
+12. A script to remove modules pages: [Remove_Module_Pages.py](./scripts/Remove_Module_Pages.py)
 
 ## Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
