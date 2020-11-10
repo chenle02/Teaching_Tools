@@ -199,14 +199,15 @@ $ pandoc -s README.md -o ./site_html/index.html
 ```
 ## Other misc tools
 I am running Linux -- Ubuntu 20.10. Here are a list of tools that are handy, many of which can also run under Windows or Mac OS:
-12. The shell: [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
+
+1. The shell: [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
 2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim](https://github.com/neovim/neovim) + [awesome window manager](https://awesomewm.org/) + [Lualatex](http://www.luatex.org/) + Writing scripts in Lua = "Congratulations! You are on Lua Land now!"
 1. [fzf: A command-line fuzzy finder](https://github.com/junegunn/fzf)
 9. [lazygit: simple terminal UI for git commands](https://github.com/jesseduffield/lazygit) and [tig: Text-mode interface for git](https://github.com/jonas/tig)
-13. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
+1. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
 4. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
 7. [qutebrowser/qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
 5. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
-10. [neomutt](https://github.com/neomutt/neomutt) configured through [LukeSmithxyz/mutt-wizard: A system for automatically configuring mutt and isync with a simple interface and safe passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address book.
-11. [abook: CLI Address book](https://github.com/hhirsch/abook)
+1. [neomutt](https://github.com/neomutt/neomutt) configured through [LukeSmithxyz/mutt-wizard: A system for automatically configuring mutt and isync with a simple interface and safe passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address book.
+1. [abook: CLI Address book](https://github.com/hhirsch/abook)
 
