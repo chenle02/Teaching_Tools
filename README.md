@@ -1,3 +1,5 @@
+![Lua Land](Gel-on-Moon.jpg)
+
 # Teaching Tools and My Setups
  
 Hera are some tools that I am using for teaching [Math 221, Fall](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
@@ -197,7 +199,7 @@ $ pandoc -s README.md -o ./site_html/index.html
 ## Other misc tools
 Here are a list of tools that are handy:
 1. [fzf: A command-line fuzzy finder](https://github.com/junegunn/fzf)
-2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim: Vim-fork focused on extensibility and usability](https://github.com/neovim/neovim)
+2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim](https://github.com/neovim/neovim) + [awesome window manager](https://awesomewm.org/) + [Lualatex](http://www.luatex.org/) + Scripts written in Lua = "Congratulations! You are on Lua Land"
 4. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
 5. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
 7. [qutebrowser/qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
@@ -209,4 +211,4 @@ Here are a list of tools that are handy:
 11. [abook: CLI Address book](https://github.com/hhirsch/abook)
 12. [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
 13. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
-14. [awesome window manager](https://awesomewm.org/)
+14. 
