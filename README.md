@@ -2,7 +2,7 @@
 
 # Teaching Tools and My Setups
  
-Hera are some tools that I am using for teaching [Math 221, Fall](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
+Hera are some tools that I am using for teaching [Math 221, Fall 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
 
 ## Use _Text2qti_ to handle Canvas Quiz, homework and exams
 1. Here is the [Text2qti]( https://github.com/gpoore/text2qti/tree/8e16684fe18dbcacec1474fbde8e9bfeef4c5838)  on Github.
@@ -172,6 +172,7 @@ $ Rscript weights.r
 4. I wrote this script [split.lua](scripts/split.lua) to split the textbook into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides).
 
 # Video processing and animation
+This part is very sketchy right now. I may elaborate it more in the future.
 1. Use the Python package [manim](https://github.com/3b1b/manim) by _3 Blue 1 Brown_ to generate animation videos.
     * Here are some [examples]( https://talkingphysics.wordpress.com/2019/01/08/getting-started-animating-with-manim-and-python-3-7/ ) to walk through.
 2. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
@@ -197,18 +198,15 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 $ pandoc -s README.md -o ./site_html/index.html
 ```
 ## Other misc tools
-Here are a list of tools that are handy:
+I am running Linux -- Ubuntu 20.10. Here are a list of tools that are handy, many of which can also run under Windows or Mac OS:
+12. The shell: [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
+2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim](https://github.com/neovim/neovim) + [awesome window manager](https://awesomewm.org/) + [Lualatex](http://www.luatex.org/) + Writing scripts in Lua = "Congratulations! You are on Lua Land now!"
 1. [fzf: A command-line fuzzy finder](https://github.com/junegunn/fzf)
-2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim](https://github.com/neovim/neovim) + [awesome window manager](https://awesomewm.org/) + [Lualatex](http://www.luatex.org/) + Scripts written in Lua = "Congratulations! You are on Lua Land"
-4. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
-5. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
-7. [qutebrowser/qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
 9. [lazygit: simple terminal UI for git commands](https://github.com/jesseduffield/lazygit) and [tig: Text-mode interface for git](https://github.com/jonas/tig)
-10. [neomutt](https://github.com/neomutt/neomutt) configured through [LukeSmithxyz/mutt-wizard: A
-   system for automatically configuring mutt and isync with a simple interface and safe
-   passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address
-   book.
-11. [abook: CLI Address book](https://github.com/hhirsch/abook)
-12. [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
 13. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
-14. 
+4. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
+7. [qutebrowser/qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
+5. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
+10. [neomutt](https://github.com/neomutt/neomutt) configured through [LukeSmithxyz/mutt-wizard: A system for automatically configuring mutt and isync with a simple interface and safe passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address book.
+11. [abook: CLI Address book](https://github.com/hhirsch/abook)
+
