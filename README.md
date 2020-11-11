@@ -2,7 +2,8 @@
 
 # Teaching Tools and My Setups
  
-Hera are some tools that I am using for teaching [Math 221, Fall 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
+This is a working page that I am trying to document tools that I am using for teaching online
+multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
 
 ## Use _Text2qti_ to handle Canvas Quiz, homework and exams
 1. Here is the [Text2qti]( https://github.com/gpoore/text2qti/tree/8e16684fe18dbcacec1474fbde8e9bfeef4c5838)  on Github.
@@ -12,7 +13,7 @@ Hera are some tools that I am using for teaching [Math 221, Fall 2020](http://ma
 	    * Five groups of problems. Each group contains 3-4 problems.
 	    * One picks randomly one or two problems from each group.
 	    * Ten points for each problem.
-    * If you use [vim or neovim](https://github.com/neovim/neovim), source the file [comand_qti.vim](scripts/command_qti.vim) where
+    * If you use [vim/neovim](https://github.com/neovim/neovim), source the file [comand_qti.vim](scripts/command_qti.vim) where
 	    * the fold method is set to `:set foldmethod=marker`
 	    * The command `<leader><leader>` under normal mode will remove unnecessary `{{{` from the fold method to generate file without `.tex`
 		and then it will run `text2qti` the newly generated file (without `.tex`) to generate a file with `.zip`.
@@ -21,94 +22,8 @@ Hera are some tools that I am using for teaching [Math 221, Fall 2020](http://ma
 	    * Then you need to upload this to Canvas following the steps here: [How do I import quizzes from QTI packages? - Canvas Community](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-import-quizzes-from-QTI-packages/ta-p/1046)
 4. Here are some more tricks that I am using to speed up the process.
     * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
-    * Create the quickmarks first 
-```sh
-m0 https://emory.instructure.com/courses/66586/modules
-m1 https://emory.instructure.com/courses/83803/modules
-m2 https://emory.instructure.com/courses/83638/modules
-m3 https://emory.instructure.com/courses/84892/modules
-m4 https://emory.instructure.com/courses/84083/modules
-m5 https://emory.instructure.com/courses/79158/modules
-m6 https://emory.instructure.com/courses/76203/modules
-m7 https://emory.instructure.com/courses/78323/modules
-a0 https://emory.instructure.com/courses/66586/announcements
-a1 https://emory.instructure.com/courses/83803/announcements
-a2 https://emory.instructure.com/courses/83638/announcements
-a3 https://emory.instructure.com/courses/84892/announcements
-a4 https://emory.instructure.com/courses/84083/announcements
-a5 https://emory.instructure.com/courses/79158/announcements
-a6 https://emory.instructure.com/courses/76203/announcements
-a7 https://emory.instructure.com/courses/78323/announcements
-q0 https://emory.instructure.com/courses/66586/quizzes
-q1 https://emory.instructure.com/courses/83803/quizzes
-q2 https://emory.instructure.com/courses/83638/quizzes
-q3 https://emory.instructure.com/courses/84892/quizzes
-q4 https://emory.instructure.com/courses/84083/quizzes
-q5 https://emory.instructure.com/courses/79158/quizzes
-q6 https://emory.instructure.com/courses/76203/quizzes
-q7 https://emory.instructure.com/courses/78323/quizzes
-s0 https://emory.instructure.com/courses/66586/assignments/syllabus
-s1 https://emory.instructure.com/courses/83803/assignments/syllabus
-s2 https://emory.instructure.com/courses/83638/assignments/syllabus
-s3 https://emory.instructure.com/courses/84892/assignments/syllabus
-s4 https://emory.instructure.com/courses/84083/assignments/syllabus
-s5 https://emory.instructure.com/courses/79158/assignments/syllabus
-s6 https://emory.instructure.com/courses/76203/assignments/syllabus
-s7 https://emory.instructure.com/courses/78323/assignments/syllabus
-```
-* Create Zsh alias function to open all courses side by side
-```sh
-qba_fall() {
-    qutebrowser ":quickmark-load -t a5 ;; tab-give"
-    qutebrowser ":quickmark-load -t a6 ;; tab-give"
-    qutebrowser ":quickmark-load -t a7 ;; tab-give"
-    }
-qba_spring() {
-    qutebrowser ":quickmark-load -t a1 ;; tab-give"
-    qutebrowser ":quickmark-load -t a2 ;; tab-give"
-    qutebrowser ":quickmark-load -t a3 ;; tab-give"
-    qutebrowser ":quickmark-load -t a4 ;; tab-give"
-    }
-qbq_fall() {
-    qutebrowser ":quickmark-load -t q0 ;; tab-give"
-    qutebrowser ":quickmark-load -t q5 ;; tab-give"
-    qutebrowser ":quickmark-load -t q6 ;; tab-give"
-    qutebrowser ":quickmark-load -t q7 ;; tab-give"
-    }
-qbq_spring() {
-    qutebrowser ":quickmark-load -t q0 ;; tab-give"
-    qutebrowser ":quickmark-load -t q1 ;; tab-give"
-    qutebrowser ":quickmark-load -t q2 ;; tab-give"
-    qutebrowser ":quickmark-load -t q3 ;; tab-give"
-    qutebrowser ":quickmark-load -t q4 ;; tab-give"
-    }
-
-qbm_fall() {
-    qutebrowser ":quickmark-load -t m0 ;; tab-give"
-    qutebrowser ":quickmark-load -t m5 ;; tab-give"
-    qutebrowser ":quickmark-load -t m6 ;; tab-give"
-    qutebrowser ":quickmark-load -t m7 ;; tab-give"
-    }
-qbm_spring() {
-    qutebrowser ":quickmark-load -t m0 ;; tab-give"
-    qutebrowser ":quickmark-load -t m1 ;; tab-give"
-    qutebrowser ":quickmark-load -t m2 ;; tab-give"
-    qutebrowser ":quickmark-load -t m3 ;; tab-give"
-    qutebrowser ":quickmark-load -t m4 ;; tab-give"
-    }
-qbs_fall() {
-    qutebrowser ":quickmark-load -t s5 ;; tab-give"
-    qutebrowser ":quickmark-load -t s6 ;; tab-give"
-    qutebrowser ":quickmark-load -t s7 ;; tab-give"
-    }
-qbs_spring() {
-    qutebrowser ":quickmark-load -t s1 ;; tab-give"
-    qutebrowser ":quickmark-load -t s2 ;; tab-give"
-    qutebrowser ":quickmark-load -t s3 ;; tab-give"
-    qutebrowser ":quickmark-load -t s4 ;; tab-give"
-    }
-alias qbwin_only='qutebrowser ":window-only"'
-``` 
+    * Create the [quickmarks ](quickmarks )first 
+    * Create Zsh alias function to [open all courses side-by-side in qutebrowser](open all courses side-by-side in qutebrowser)
 
 ## Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.

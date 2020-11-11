@@ -1,0 +1,34 @@
+```sh
+m0 https://emory.instructure.com/courses/66586/modules
+m1 https://emory.instructure.com/courses/83803/modules
+m2 https://emory.instructure.com/courses/83638/modules
+m3 https://emory.instructure.com/courses/84892/modules
+m4 https://emory.instructure.com/courses/84083/modules
+m5 https://emory.instructure.com/courses/79158/modules
+m6 https://emory.instructure.com/courses/76203/modules
+m7 https://emory.instructure.com/courses/78323/modules
+a0 https://emory.instructure.com/courses/66586/announcements
+a1 https://emory.instructure.com/courses/83803/announcements
+a2 https://emory.instructure.com/courses/83638/announcements
+a3 https://emory.instructure.com/courses/84892/announcements
+a4 https://emory.instructure.com/courses/84083/announcements
+a5 https://emory.instructure.com/courses/79158/announcements
+a6 https://emory.instructure.com/courses/76203/announcements
+a7 https://emory.instructure.com/courses/78323/announcements
+q0 https://emory.instructure.com/courses/66586/quizzes
+q1 https://emory.instructure.com/courses/83803/quizzes
+q2 https://emory.instructure.com/courses/83638/quizzes
+q3 https://emory.instructure.com/courses/84892/quizzes
+q4 https://emory.instructure.com/courses/84083/quizzes
+q5 https://emory.instructure.com/courses/79158/quizzes
+q6 https://emory.instructure.com/courses/76203/quizzes
+q7 https://emory.instructure.com/courses/78323/quizzes
+s0 https://emory.instructure.com/courses/66586/assignments/syllabus
+s1 https://emory.instructure.com/courses/83803/assignments/syllabus
+s2 https://emory.instructure.com/courses/83638/assignments/syllabus
+s3 https://emory.instructure.com/courses/84892/assignments/syllabus
+s4 https://emory.instructure.com/courses/84083/assignments/syllabus
+s5 https://emory.instructure.com/courses/79158/assignments/syllabus
+s6 https://emory.instructure.com/courses/76203/assignments/syllabus
+s7 https://emory.instructure.com/courses/78323/assignments/syllabus
+```
