@@ -23,7 +23,7 @@ multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math
 4. Here are some more tricks that I am using to speed up the process.
     * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
     * Create the [quickmarks](./quickmarks.md)first 
-    * Create Zsh alias function to [open all courses side-by-side in qutebrowser](open all courses side-by-side in qutebrowser)
+    * Create Zsh alias function to [open all courses side-by-side in qutebrowser](./open all courses side-by-side in qutebrowser.md)
 
 ## Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
