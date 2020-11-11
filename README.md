@@ -1,22 +1,25 @@
-# Contents
-
-- [Teaching Tools and My Setups](#Teaching Tools and My Setups)
-    - [Use _Text2qti_ to handle Canvas Quiz, homework and exams](#Teaching Tools and My Setups#Use _Text2qti_ to handle Canvas Quiz, homework and exams)
-    - [Use _Vimwiki_ to generate the course html pages](#Teaching Tools and My Setups#Use _Vimwiki_ to generate the course html pages)
-    - [Use _Canvas API_ to access and handle Canvas pages.](#Teaching Tools and My Setups#Use _Canvas API_ to access and handle Canvas pages.)
-    - [Dark mode of the slides](#Teaching Tools and My Setups#Dark mode of the slides)
-- [Video processing and animation](#Video processing and animation)
-    - [Markdown related](#Video processing and animation#Markdown related)
-    - [Other misc tools](#Video processing and animation#Other misc tools)
-
 ![Lua Land](Gel-on-Moon.jpg)
 
-# Teaching Tools and My Setups
- 
+Some Teaching Tools and My Setps
+=========
+**Le Chen**
+
 This is a working page that I am trying to document tools that I am using for teaching online
 multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
 
-## Use _Text2qti_ to handle Canvas Quiz, homework and exams
+<!-- vim-markdown-toc GitLab -->
+
+* [Use _Text2qti_ to handle Canvas Quiz, homework and exams](#use-_text2qti_-to-handle-canvas-quiz-homework-and-exams)
+* [Use _Vimwiki_ to generate the course html pages](#use-_vimwiki_-to-generate-the-course-html-pages)
+* [Use _Canvas API_ to access and handle Canvas pages.](#use-_canvas-api_-to-access-and-handle-canvas-pages)
+* [Dark mode of the slides](#dark-mode-of-the-slides)
+* [Video processing and animation](#video-processing-and-animation)
+* [Markdown related](#markdown-related)
+* [Other misc tools](#other-misc-tools)
+
+<!-- vim-markdown-toc -->
+
+# Use _Text2qti_ to handle Canvas Quiz, homework and exams
 1. Here is the [Text2qti]( https://github.com/gpoore/text2qti/tree/8e16684fe18dbcacec1474fbde8e9bfeef4c5838)  on Github.
 2. There are several examples on the Github page.
 3. Here are some more examples:
@@ -29,16 +32,16 @@ multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math
 	    * The command `<leader><leader>` under normal mode will remove unnecessary `{{{` from the fold method to generate file without `.tex`
 		and then it will run `text2qti` the newly generated file (without `.tex`) to generate a file with `.zip`.
 	    * Now you can upload `.zip` file to Canvas.
-	    * These steps are shown by [SampleHomework.md.tex](scripts/SampleHomework.md.tex) --> [SampleHomework.md](scripts/SampleHomework.md) --> [SampleHomework.zip](scripts/SampleHomework.zip) 
+	    * These steps are shown by [SampleHomework.md.tex](scripts/SampleHomework.md.tex) --> [SampleHomework.md](scripts/SampleHomework.md) --> [SampleHomework.zip](scripts/SampleHomework.zip)
 	    * Then you need to upload this to Canvas following the steps here: [How do I import quizzes from QTI packages? - Canvas Community](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-import-quizzes-from-QTI-packages/ta-p/1046)
 4. Here are some more tricks that I am using to speed up the process.
     * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
-    * Create the [quickmarks](./quickmarks.md) first 
+    * Create the [quickmarks](./quickmarks.md) first
     * Create Zsh alias function to [open all courses side-by-side in qutebrowser](./open_all_courses_side-by-side_in_qutebrowser.md)
     * Then by running, e.g., `qbm_fall` from terminal, four courses will lay out side-by-side, all
       at the modules page.
 
-## Use _Vimwiki_ to generate the course html pages
+# Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
 2. Here are some examples:
     1. [Math 221, Fall](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html)
@@ -65,8 +68,8 @@ $ wordcloud_cli --text vimwiki/index.wiki --imagefile vimwiki_html/wordcloud.png
 $ Rscript weights.r
 ```
 
-## Use _Canvas API_ to access and handle Canvas pages.
-1. Canvas API is specified here: [Cavnas LMS](https://canvas.instructure.com/doc/api/) 
+# Use _Canvas API_ to access and handle Canvas pages.
+1. Canvas API is specified here: [Cavnas LMS](https://canvas.instructure.com/doc/api/)
 2. Here is a convenient Python wrapper for this API: [canvasapi](https://github.com/ucfopen/canvasapi)
 3. The first thing is to obtain the `Canvas API KEY`. For this following the steps here:
     * [How do I obtain an API access token in the Canvas Data Portal?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-obtain-an-API-access-token-in-the-Canvas-Data-Portal/ta-p/157)
@@ -76,11 +79,11 @@ $ Rscript weights.r
     * Use [at](https://linuxize.com/post/at-command-in-linux/) to make the schedule.
 7. A script to make announcements from terminal [Create_Announcement.py](scripts/Create_Announcement.py)
 8. A script to upload Homework to Canvas and show it on Module Page: [Upload_HW.py](./scripts/Upload_HW.py)
-9. A script to copy modules pages: [Copy_ExternalTools.py](./scripts/Copy_ExternalTools.py) 
+9. A script to copy modules pages: [Copy_ExternalTools.py](./scripts/Copy_ExternalTools.py)
 10. A script to list modules pages: [Copy_ExternalTools_test.py](./scripts/Copy_ExternalTools_test.py)
 12. A script to remove modules pages: [Remove_Module_Pages.py](./scripts/Remove_Module_Pages.py)
 
-## Dark mode of the slides
+# Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
     * White:      #FFFFFF
     * Pink:       #FB73BE
@@ -92,7 +95,7 @@ $ Rscript weights.r
     * Purple: 	  #A87DFF
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
 3. Below are some example slides (see the [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html) for a complete set of slides for the class of linear algebra)
- 
+
 | Chapter/Section                               | Slides                                                                                        | Slides                                                                              |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Section 3-2. Determinants and Matrix Inverses | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Handout.pdf) |
@@ -111,12 +114,12 @@ This part is very sketchy right now. I may elaborate it more in the future.
 ```sh
 $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
-7. Here is the script [splitvideo lua](scripts/splitvideo.lua). This script depends on 
+7. Here is the script [splitvideo lua](scripts/splitvideo.lua). This script depends on
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
     2. [ffmpeg](https://ffmpeg.org/): used to split long course videos to short ones.
     3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
 
-## Markdown related
+# Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
     * Once it is installed, cd into the directory of the Markdown files. Then run `grip`.
     * Open a browser with the following link: [http://localhost:6419/](http://localhost:6419/).
@@ -125,7 +128,7 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```sh
 $ pandoc -s README.md -o ./site_html/index.html
 ```
-## Other misc tools
+# Other misc tools
 I am running Linux -- Ubuntu 20.10. Here are a list of tools that are handy, many of which can also run under Windows or Mac OS:
 
 1. The shell: [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
