@@ -22,7 +22,7 @@ multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math
 	    * Then you need to upload this to Canvas following the steps here: [How do I import quizzes from QTI packages? - Canvas Community](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-import-quizzes-from-QTI-packages/ta-p/1046)
 4. Here are some more tricks that I am using to speed up the process.
     * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
-    * Create the [quickmarks ](quickmarks )first 
+    * Create the [quickmarks](./quickmarks.md)first 
     * Create Zsh alias function to [open all courses side-by-side in qutebrowser](open all courses side-by-side in qutebrowser)
 
 ## Use _Vimwiki_ to generate the course html pages
