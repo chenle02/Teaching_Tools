@@ -1,3 +1,14 @@
+# Contents
+
+- [Teaching Tools and My Setups](#Teaching Tools and My Setups)
+    - [Use _Text2qti_ to handle Canvas Quiz, homework and exams](#Teaching Tools and My Setups#Use _Text2qti_ to handle Canvas Quiz, homework and exams)
+    - [Use _Vimwiki_ to generate the course html pages](#Teaching Tools and My Setups#Use _Vimwiki_ to generate the course html pages)
+    - [Use _Canvas API_ to access and handle Canvas pages.](#Teaching Tools and My Setups#Use _Canvas API_ to access and handle Canvas pages.)
+    - [Dark mode of the slides](#Teaching Tools and My Setups#Dark mode of the slides)
+- [Video processing and animation](#Video processing and animation)
+    - [Markdown related](#Video processing and animation#Markdown related)
+    - [Other misc tools](#Video processing and animation#Other misc tools)
+
 ![Lua Land](Gel-on-Moon.jpg)
 
 # Teaching Tools and My Setups
@@ -22,8 +33,10 @@ multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math
 	    * Then you need to upload this to Canvas following the steps here: [How do I import quizzes from QTI packages? - Canvas Community](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-import-quizzes-from-QTI-packages/ta-p/1046)
 4. Here are some more tricks that I am using to speed up the process.
     * Use [qutebrowser](https://github.com/qutebrowser/qutebrowser) as the web browser.
-    * Create the [quickmarks](./quickmarks.md)first 
+    * Create the [quickmarks](./quickmarks.md) first 
     * Create Zsh alias function to [open all courses side-by-side in qutebrowser](./open_all_courses_side-by-side_in_qutebrowser.md)
+    * Then by running, e.g., `qbm_fall` from terminal, four courses will lay out side-by-side, all
+      at the modules page.
 
 ## Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
