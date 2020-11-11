@@ -1,11 +1,14 @@
 ![Lua Land](Gel-on-Moon.jpg)
 
-Some Teaching Tools and My Setps
+Some Teaching Tools and Setups
 =========
 **Le Chen**
 
 This is a working page that I am trying to document tools that I am using for teaching online
-multiple sessions of the linear algebra course [Math 221, Fall 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html).
+multiple sessions of the linear algebra course [Math 221, Fall
+2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html). I am using Linux --
+_Ubuntu 20.10_  -- as my operating system, but I believe many tools and setups explained below won't depend on
+specific operating systems. 
 
 <!-- vim-markdown-toc GitLab -->
 
