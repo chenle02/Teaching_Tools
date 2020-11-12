@@ -43,7 +43,10 @@ specific operating systems.
     * Create Zsh alias function to [open all courses side-by-side in qutebrowser](./open_all_courses_side-by-side_in_qutebrowser.md)
     * Then by running, e.g., `qbm_fall` from terminal, four courses will lay out side-by-side, all
       at the modules page.
-
+5. Finally, here is the [spread sheet](./scripts/Math_221_Fall_2020_grades.xlsx) to produce the final grade.
+   One can find the detailed grading policy on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html)
+      
+      
 # Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
 2. Here are some examples:
