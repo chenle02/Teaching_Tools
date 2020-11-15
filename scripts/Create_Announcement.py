@@ -5,6 +5,12 @@ Author: Le Chen
 Email: chenle02@gmail.com
 Github: https://github.com/chenle02
 Description: Use this script to create announcements on several sessions.
+    The format for the announcement is given by 1115_Welcome.txt where
+        * first line is the subject.
+        * One blank line
+        * Main body.
+        * The line break needs to be input manually: <br>
+    Try: ./Create_Announcement.py 1115_Welcome.txt
 """
 
 import sys
