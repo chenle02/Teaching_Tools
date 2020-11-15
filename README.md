@@ -88,6 +88,7 @@ $ Rscript weights.r
 9. A script to copy modules pages: [Copy_ExternalTools.py](./scripts/Copy_ExternalTools.py)
 10. A script to list modules pages: [Copy_ExternalTools_test.py](./scripts/Copy_ExternalTools_test.py)
 12. A script to remove modules pages: [Remove_Module_Pages.py](./scripts/Remove_Module_Pages.py)
+12. A script to batch create empty modules: [scripts Week_Module py](./scripts/Week_Module.py)
 13. Finally, if two sections have the same schedule, one may combine courses following the steps here:  
     * [Combining Courses: Canvas Training Center](https://stedwards.instructure.com/courses/5655/pages/combining-courses)
 
