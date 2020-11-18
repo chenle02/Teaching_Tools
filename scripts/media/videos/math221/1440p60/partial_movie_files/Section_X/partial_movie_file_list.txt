@@ -1,0 +1,4 @@
+file 'file:/home/lechen/Dropbox/Teaching/svn_teaching/2020_Fall_Math221/videos/my_records/08-20/media/videos/math221/1440p60/partial_movie_files/Section_X/00000.mp4'
+file 'file:/home/lechen/Dropbox/Teaching/svn_teaching/2020_Fall_Math221/videos/my_records/08-20/media/videos/math221/1440p60/partial_movie_files/Section_X/00001.mp4'
+file 'file:/home/lechen/Dropbox/Teaching/svn_teaching/2020_Fall_Math221/videos/my_records/08-20/media/videos/math221/1440p60/partial_movie_files/Section_X/00002.mp4'
+file 'file:/home/lechen/Dropbox/Teaching/svn_teaching/2020_Fall_Math221/videos/my_records/08-20/media/videos/math221/1440p60/partial_movie_files/Section_X/00003.mp4'

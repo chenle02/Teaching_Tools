@@ -115,18 +115,27 @@ $ Rscript weights.r
 This part is very sketchy right now. I may elaborate it more in the future.
 1. Use the Python package [manim](https://github.com/3b1b/manim) by _3 Blue 1 Brown_ to generate animation videos.
     * Here are some [examples]( https://talkingphysics.wordpress.com/2019/01/08/getting-started-animating-with-manim-and-python-3-7/ ) to walk through.
-2. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
-3. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
-4. `cp SA-B.txt SA-B_S#.txt` with A-B means Section A.B.
-5. Edit `SA-B_S#.txt` and run `./GenTitleVideo.sh SA-B_S#` (without extension) to generate the title videos
-6. Finally, run `./splitvideo.lua mmdd_S# mmdd_S#_content.txt` to see the command to be executed. If all looks good, run
-```sh
-$ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
-```
-7. Here is the script [splitvideo lua](scripts/splitvideo.lua). This script depends on
+    * Here are steps how I use _manim_ to generate title videos.
+	1. Install _manim_ and make a symbolic link of manim.py at your working directory.
+	2. Edit your parameter file: [Sample file](./scripts/S8-1_S5-ProjectionAsTransform.txt) 
+	3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation
+	   file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
+	5. You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
+	6. The example animation generated is here: [scripts S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
+2. I use the script: [splitvideo lua](scripts/splitvideo.lua) to automate the video post processing.
+   This script depends on (will do the following)
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
     2. [ffmpeg](https://ffmpeg.org/): used to split long course videos to short ones.
     3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
+3. Here is the concrete workflow:
+    2. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
+    3. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
+    4. `cp SA-B.txt SA-B_S#.txt` with A-B means Section A.B.
+    5. Edit `SA-B_S#.txt` and run `./GenTitleVideo.sh SA-B_S#` (without extension) to generate the title videos
+    6. Finally, run `./splitvideo.lua mmdd_S# mmdd_S#_content.txt` to see the command to be executed. If all looks good, run
+    ```sh
+    $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
+    ```
 
 # Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.

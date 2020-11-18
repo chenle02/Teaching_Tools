@@ -1,0 +1,4 @@
+Section: 5
+Date: 11/10/2020
+Content: 8.1 Orthogonal Complements and Projections \\ -- Projection as a Transformation
+Latex: \text{dim}(U)+\text{dim}(U^{\perp})=n
