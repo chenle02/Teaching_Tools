@@ -120,6 +120,10 @@ This part is very sketchy right now. I may elaborate it more in the future.
 	2. Edit your parameter file: [Sample file](./scripts/S8-1_S5-ProjectionAsTransform.txt) 
 	3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation
 	   file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
+	    If you use _nvim/vim_, map the following command
+	    `noremap <leader><leader> :bufdo VimuxRunCommand('\./GenTitleVideo\.sh ' . expand('%:r'))<cr>`
+	    and double hit <leader> key twice. The animation will be produced. Here we need install
+	    the package [vimux](https://github.com/benmills/vimux).
 	5. You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
 	6. The example animation generated is here: [scripts S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
 2. I use the script: [splitvideo lua](scripts/splitvideo.lua) to automate the video post processing.
