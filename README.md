@@ -118,15 +118,14 @@ This part is very sketchy right now. I may elaborate it more in the future.
 2. Here are steps how I use _manim_ to generate title videos.
     1. Install _manim_ and make a symbolic link of manim.py at your working directory.
     2. Edit your parameter file: [Sample file](./scripts/S8-1_S5-ProjectionAsTransform.txt) 
-    3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation
-       file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
-	1. If you use _nvim/vim_, map the following command
+    3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
+	* If you use _nvim/vim_, map the following command
 	    `noremap <leader><leader> :bufdo VimuxRunCommand('\./GenTitleVideo\.sh ' . expand('%:r'))<cr>`
-	2. Then double hit the leader key twice. The animation will be produced. 
-	3. Here you need install the package [vimux](https://github.com/benmills/vimux) in your vimrc.
+	* Then double hit the leader key twice. The animation will be produced. 
+	* Here you need install the package [vimux](https://github.com/benmills/vimux) in your vimrc.
     4. Note that
-	1. You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
-	2. The example animation generated is here: [scripts S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
+	* You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
+	* The example animation generated is here: [scripts S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
 3. I use the script: [splitvideo lua](scripts/splitvideo.lua) to automate the video post processing.
    This script depends on (will do the following)
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
