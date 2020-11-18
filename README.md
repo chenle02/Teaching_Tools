@@ -131,15 +131,16 @@ This part is very sketchy right now. I may elaborate it more in the future.
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
     2. [ffmpeg](https://ffmpeg.org/): used to split long course videos to short ones.
     3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
-3. Here is the concrete workflow:
-    2. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
+3. Here is the full workflow with ways of naming files:
+    1. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
     3. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
-    4. `cp SA-B.txt SA-B_S#.txt` with A-B means Section A.B.
-    5. Edit `SA-B_S#.txt` and run `./GenTitleVideo.sh SA-B_S#` (without extension) to generate the title videos
+    4. `cp SA-B.txt SA-B_S#.txt` with A-B means Section A.B., for example, Section 8.1 for Section 5 corresponds
+       to `S8-1_S5.txt` (this is the parameter file for the title animation).
+    5. Edit the parameter file for the title animation `SA-B_S#.txt` and run `./GenTitleVideo.sh SA-B_S#` (without extension) to generate the title videos
     6. Finally, run `./splitvideo.lua mmdd_S# mmdd_S#_content.txt` to see the command to be executed. If all looks good, run
-    ```sh
-    $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
-    ```
+```sh
+$ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
+```
 
 # Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
