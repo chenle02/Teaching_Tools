@@ -1,0 +1,4 @@
+Section: 7
+Date: 11/17/2020
+Content: 8.6 Singular Value Decompositions \\ -- Computing SVD
+Latex: .

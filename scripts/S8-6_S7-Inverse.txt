@@ -1,0 +1,4 @@
+Section: 7
+Date: 11/17/2020
+Content: 8.6 Singular Value Decompositions \\ -- Applications to Generalized Inverses
+Latex: A^+=A^T(AA^T)^{-1}\quad\text{or}\quad A^+=(A^TA)^{-1}A^T

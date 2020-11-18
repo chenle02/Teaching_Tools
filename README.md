@@ -141,6 +141,16 @@ This part is very sketchy right now. I may elaborate it more in the future.
 ```sh
 $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
+1. Here are some sample files:
+    1. Sample content file: [scripts 1117_S7_content txt](./scripts/1117_S7_content.txt)
+    2. and the associated sample parameter files:
+	1. [scripts S8 6_S7 Def txt](./scripts/S8-6_S7-Def.txt)
+	2. [scripts S8 6_S7 Comp txt](./scripts/S8-6_S7-Comp.txt)
+	3. [scripts S8 6_S7 Subspaces txt](./scripts/S8-6_S7-Subspaces.txt)
+	3. [scripts S8 6_S7 Polar txt](./scripts/S8-6_S7-Polar.txt)
+	4. [scripts S8 6_S7 Inverse txt](./scripts/S8-6_S7-Inverse.txt)
+	5. [scripts S8 6_S7 Transform txt](./scripts/S8-6_S7-Transform.txt)
+	6. [scripts S8 6_S7 Compression txt](./scripts/S8-6_S7-Compression.txt)
 
 # Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.

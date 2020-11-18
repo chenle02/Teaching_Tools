@@ -1,0 +1,9 @@
+00:01:27 -- 00:05:50, Some announcements before class,
+00:05:50 -- 00:19:25, Section 8-6 Singular Value Decomposition -- Definition,                           S8-6_S7-Def
+00:19:25 -- 00:35:38, Section 8-6 Singular Value Decomposition -- Computations,                         S8-6_S7-Comp
+00:35:38 -- 00:51:03, Section 8-6 Singular Value Decomposition -- Fundamental Subspaces,                S8-6_S7-Subspaces
+00:51:03 -- 00:55:24, Section 8-6 Singular Value Decomposition -- Application -- Polar Decomposition,   S8-6_S7-Polar
+00:55:24 -- 01:01:57, Section 8-6 Singular Value Decomposition -- Application -- Generalized Inverses,  S8-6_S7-Inverse
+01:01:57 -- 01:08:08, Section 8-6 Singular Value Decomposition -- Application -- Linear Transformation, S8-6_S7-Transform
+01:08:08 -- 01:15:37, Section 8-6 Singular Value Decomposition -- Application -- Image Compression,     S8-6_S7-Compression
+01:15:37 -- 01:16:53, Post words
