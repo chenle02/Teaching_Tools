@@ -8,7 +8,7 @@ This is a working page that I am trying to document tools that I am using for te
 multiple sessions of the linear algebra course [Math 221, Fall
 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html). I am using Linux --
 _Ubuntu 20.10_  -- as my operating system, but I believe many tools and setups explained below won't depend on
-specific operating systems. 
+specific operating systems.
 
 <!-- vim-markdown-toc GitLab -->
 
@@ -45,8 +45,8 @@ specific operating systems.
       at the modules page.
 5. Finally, here is the [spread sheet](./scripts/Math_221_Fall_2020_grades.xlsx) to produce the final grade.
    One can find the detailed grading policy on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html)
-      
-      
+
+
 # Use _Vimwiki_ to generate the course html pages
 1. Here is the [Vimwiki](https://github.com/vimwiki/vimwiki) on GitHub.
 2. Here are some examples:
@@ -89,7 +89,7 @@ $ Rscript weights.r
 10. A script to list modules pages: [Copy_ExternalTools_test.py](./scripts/Copy_ExternalTools_test.py)
 12. A script to remove modules pages: [Remove_Module_Pages.py](./scripts/Remove_Module_Pages.py)
 12. A script to batch create empty modules: [scripts Week_Module py](./scripts/Week_Module.py)
-13. Finally, if two sections have the same schedule, one may combine courses following the steps here:  
+13. Finally, if two sections have the same schedule, one may combine courses following the steps here:
     * [Combining Courses: Canvas Training Center](https://stedwards.instructure.com/courses/5655/pages/combining-courses)
 
 # Dark mode of the slides
@@ -117,11 +117,11 @@ This part is very sketchy right now. I may elaborate it more in the future.
     * Here are some [examples]( https://talkingphysics.wordpress.com/2019/01/08/getting-started-animating-with-manim-and-python-3-7/ ) to walk through.
 2. Here are steps how I use _manim_ to generate title videos.
     1. Install _manim_ and make a symbolic link of manim.py at your working directory.
-    2. Edit your parameter file: [Sample file](./scripts/S8-1_S5-ProjectionAsTransform.txt) 
+    2. Edit your parameter file: [Sample file](./scripts/S8-1_S5-ProjectionAsTransform.txt)
     3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
 	* If you use _nvim/vim_, map the following command
 	    `noremap <leader><leader> :bufdo VimuxRunCommand('\./GenTitleVideo\.sh ' . expand('%:r'))<cr>`
-	* Then double hit the leader key twice. The animation will be produced. 
+	* Then double hit the leader key twice. The animation will be produced.
 	* Here you need install the package [vimux](https://github.com/benmills/vimux) in your vimrc.
     4. Note that
 	* You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
@@ -133,7 +133,7 @@ This part is very sketchy right now. I may elaborate it more in the future.
     3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
 3. Here is the full workflow with ways of naming files:
     1. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
-    3. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
+    3Def. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
     4. `cp SA-B.txt SA-B_S#.txt` with A-B means Section A.B., for example, Section 8.1 for Section 5 corresponds
        to `S8-1_S5.txt` (this is the parameter file for the title animation).
     5. Edit the parameter file for the title animation `SA-B_S#.txt` and run `./GenTitleVideo.sh SA-B_S#` (without extension) to generate the title videos
@@ -141,16 +141,21 @@ This part is very sketchy right now. I may elaborate it more in the future.
 ```sh
 $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
-1. Here are some sample files:
-    1. Sample content file: [scripts 1117_S7_content txt](./scripts/1117_S7_content.txt)
-    2. and the associated sample parameter files:
-	1. [scripts S8 6_S7 Def txt](./scripts/S8-6_S7-Def.txt)
-	2. [scripts S8 6_S7 Comp txt](./scripts/S8-6_S7-Comp.txt)
-	3. [scripts S8 6_S7 Subspaces txt](./scripts/S8-6_S7-Subspaces.txt)
-	3. [scripts S8 6_S7 Polar txt](./scripts/S8-6_S7-Polar.txt)
-	4. [scripts S8 6_S7 Inverse txt](./scripts/S8-6_S7-Inverse.txt)
-	5. [scripts S8 6_S7 Transform txt](./scripts/S8-6_S7-Transform.txt)
-	6. [scripts S8 6_S7 Compression txt](./scripts/S8-6_S7-Compression.txt)
+1. Here are some sample files. This is the lecture on Nov. 17th, for Section 7. I lectured on
+   Section 8.6 Singular Value decomposition.
+    1. The content file: [scripts 1117_S7_content txt](./scripts/1117_S7_content.txt)
+    2. and the associated parameter files for title animations and the animations are:
+
+| Animation parameter file                                             | Animation                                                            |
+|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| [scripts S8 6_S7 Def txt](./scripts/S8-6_S7-Def.txt)                 | [scripts S8 6_S7 Def mp4](./scripts/S8-6_S7-Def.mp4)                 |
+| [scripts S8 6_S7 Comp txt](./scripts/S8-6_S7-Comp.txt)               | [scripts S8 6_S7 Comp mp4](./scripts/S8-6_S7-Comp.mp4)               |
+| [scripts S8 6_S7 Subspaces txt](./scripts/S8-6_S7-Subspaces.txt)     | [scripts S8 6_S7 Subspaces mp4](./scripts/S8-6_S7-Subspaces.mp4)     |
+| [scripts S8 6_S7 Polar txt](./scripts/S8-6_S7-Polar.txt)             | [scripts S8 6_S7 Polar mp4](./scripts/S8-6_S7-Polar.mp4)             |
+| [scripts S8 6_S7 Inverse txt](./scripts/S8-6_S7-Inverse.txt)         | [scripts S8 6_S7 Inverse mp4](./scripts/S8-6_S7-Inverse.mp4)         |
+| [scripts S8 6_S7 Transform txt](./scripts/S8-6_S7-Transform.txt)     | [scripts S8 6_S7 Transform mp4](./scripts/S8-6_S7-Transform.mp4)     |
+| [scripts S8 6_S7 Compression txt](./scripts/S8-6_S7-Compression.txt) | [scripts S8 6_S7 Compression mp4](./scripts/S8-6_S7-Compression.mp4) |
+
 
 # Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
