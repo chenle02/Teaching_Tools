@@ -143,7 +143,7 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
 1. Here are some sample files. This is the lecture on Nov. 17th, for Section 7. I lectured on
    Section 8.6 Singular Value decomposition.
-    1. The content file: [scripts 1117_S7_content txt](./scripts/1117_S7_content.txt)
+    1. The content file: [1117_S7_content.txt](./scripts/1117_S7_content.txt)
     2. and the associated parameter files for title animations and the animations are:
 
 | Animation parameter file                                     | Animation                                                    |
