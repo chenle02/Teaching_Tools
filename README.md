@@ -146,15 +146,15 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
     1. The content file: [scripts 1117_S7_content txt](./scripts/1117_S7_content.txt)
     2. and the associated parameter files for title animations and the animations are:
 
-| Animation parameter file                                             | Animation                                                            |
-|----------------------------------------------------------------------|----------------------------------------------------------------------|
-| [scripts S8 6_S7 Def txt](./scripts/S8-6_S7-Def.txt)                 | [scripts S8 6_S7 Def mp4](./scripts/S8-6_S7-Def.mp4)                 |
-| [scripts S8 6_S7 Comp txt](./scripts/S8-6_S7-Comp.txt)               | [scripts S8 6_S7 Comp mp4](./scripts/S8-6_S7-Comp.mp4)               |
-| [scripts S8 6_S7 Subspaces txt](./scripts/S8-6_S7-Subspaces.txt)     | [scripts S8 6_S7 Subspaces mp4](./scripts/S8-6_S7-Subspaces.mp4)     |
-| [scripts S8 6_S7 Polar txt](./scripts/S8-6_S7-Polar.txt)             | [scripts S8 6_S7 Polar mp4](./scripts/S8-6_S7-Polar.mp4)             |
-| [scripts S8 6_S7 Inverse txt](./scripts/S8-6_S7-Inverse.txt)         | [scripts S8 6_S7 Inverse mp4](./scripts/S8-6_S7-Inverse.mp4)         |
-| [scripts S8 6_S7 Transform txt](./scripts/S8-6_S7-Transform.txt)     | [scripts S8 6_S7 Transform mp4](./scripts/S8-6_S7-Transform.mp4)     |
-| [scripts S8 6_S7 Compression txt](./scripts/S8-6_S7-Compression.txt) | [scripts S8 6_S7 Compression mp4](./scripts/S8-6_S7-Compression.mp4) |
+| Animation parameter file                                     | Animation                                                    |
+|--------------------------------------------------------------|--------------------------------------------------------------|
+| [S8-6_S7-Def.txt](./scripts/S8-6_S7-Def.txt)                 | [S8-6_S7-Def.mp4](./scripts/S8-6_S7-Def.mp4)                 |
+| [S8-6_S7-Comp.txt](./scripts/S8-6_S7-Comp.txt)               | [S8-6_S7-Comp.mp4](./scripts/S8-6_S7-Comp.mp4)               |
+| [S8-6_S7-Subspaces.txt](./scripts/S8-6_S7-Subspaces.txt)     | [S8-6_S7-Subspaces.mp4](./scripts/S8-6_S7-Subspaces.mp4)     |
+| [S8-6_S7-Polar.txt](./scripts/S8-6_S7-Polar.txt)             | [S8-6_S7-Polar.mp4](./scripts/S8-6_S7-Polar.mp4)             |
+| [S8-6_S7-Inverse.txt](./scripts/S8-6_S7-Inverse.txt)         | [S8-6_S7-Inverse.mp4](./scripts/S8-6_S7-Inverse.mp4)         |
+| [S8-6_S7-Transform.txt](./scripts/S8-6_S7-Transform.txt)     | [S8-6_S7-Transform.mp4](./scripts/S8-6_S7-Transform.mp4)     |
+| [S8-6_S7-Compression.txt](./scripts/S8-6_S7-Compression.txt) | [S8-6_S7-Compression.mp4](./scripts/S8-6_S7-Compression.mp4) |
 
 
 # Markdown related
