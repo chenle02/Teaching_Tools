@@ -88,7 +88,7 @@ $ Rscript weights.r
 9. A script to copy modules pages: [Copy_ExternalTools.py](./scripts/Copy_ExternalTools.py)
 10. A script to list modules pages: [Copy_ExternalTools_test.py](./scripts/Copy_ExternalTools_test.py)
 12. A script to remove modules pages: [Remove_Module_Pages.py](./scripts/Remove_Module_Pages.py)
-12. A script to batch create empty modules: [scripts Week_Module py](./scripts/Week_Module.py)
+12. A script to batch create empty modules: [Week_Module py](./scripts/Week_Module.py)
 13. Finally, if two sections have the same schedule, one may combine courses following the steps here:
     * [Combining Courses: Canvas Training Center](https://stedwards.instructure.com/courses/5655/pages/combining-courses)
 
@@ -121,11 +121,11 @@ This part is very sketchy right now. I may elaborate it more in the future.
     3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
 	* If you use _nvim/vim_, map the following command
 	    `noremap <leader><leader> :bufdo VimuxRunCommand('\./GenTitleVideo\.sh ' . expand('%:r'))<cr>`
-	* Then double hit the leader key twice. The animation will be produced.
+	* Then double hit the leader key twice. The animation will be produced under your working directory.
 	* Here you need install the package [vimux](https://github.com/benmills/vimux) in your vimrc.
     4. Note that
 	* You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
-	* The example animation generated is here: [scripts S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
+	* The example animation generated is here: [S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
 3. I use the script: [splitvideo lua](scripts/splitvideo.lua) to automate the video post processing.
    This script depends on (will do the following)
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
@@ -141,7 +141,7 @@ This part is very sketchy right now. I may elaborate it more in the future.
 ```sh
 $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```
-1. Here are some sample files. This is the lecture on Nov. 17th, for Section 7. I lectured on
+4. Here are some sample files. This is the lecture on Nov. 17th, for Section 7. I lectured on
    Section 8.6 Singular Value decomposition.
     1. The content file: [1117_S7_content.txt](./scripts/1117_S7_content.txt)
     2. and the associated parameter files for title animations and the animations are:
