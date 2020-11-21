@@ -96,6 +96,7 @@ $ Rscript weights.r
 
 # Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
+
 | Color               | Code      |
 |---------------------|-----------|
 | White               | `#FFFFFF` |
@@ -107,6 +108,7 @@ $ Rscript weights.r
 | Blue                | `#4984F2` |
 | Purple              | `#A87DFF` |
 | My Dark back ground | `#0E0E0E` |
+
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
 4. Below are some example slides (see the [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html) for a complete set of slides for the class of linear algebra)
 
@@ -126,13 +128,13 @@ This part is very sketchy right now. I may elaborate it more in the future.
     1. Install _manim_ and make a symbolic link of manim.py at your working directory.
     2. Edit your parameter file: [Sample file](./scripts/S8-1_S5-ProjectionAsTransform.txt)
     3. Then run script [GenTitleVideo.sh](./scripts/GenTitleVideo.sh) to generate the animation file: `$ ./GenTitleVideo.sh Parameters_File_without_Extension`
-	* If you use _nvim/vim_, map the following command
-	    `noremap <leader><leader> :bufdo VimuxRunCommand('\./GenTitleVideo\.sh ' . expand('%:r'))<cr>`
-	* Then double hit the leader key twice. The animation will be produced under your working directory.
-	* Here you need install the package [vimux](https://github.com/benmills/vimux) in your vimrc.
+      * If you use _nvim/vim_, map the following command
+          `noremap <leader><leader> :bufdo VimuxRunCommand('\./GenTitleVideo\.sh ' . expand('%:r'))<cr>`
+      * Then double hit the leader key twice. The animation will be produced under your working directory.
+      * Here you need install the package [vimux](https://github.com/benmills/vimux) in your vimrc.
     4. Note that
-	* You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
-	* The example animation generated is here: [S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
+      * You may change the script [math221.py](./scripts/math221.py) to suit your flavor of the animation.
+      * The example animation generated is here: [S8 1_S5 ProjectionAsTransform mp4](./scripts/S8-1_S5-ProjectionAsTransform.mp4)
 3. I use the script: [splitvideo lua](scripts/splitvideo.lua) to automate the video post processing.
    This script depends on (will do the following)
     1. [manim](https://github.com/3b1b/manim): used to generate the animation title videos.
