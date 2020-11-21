@@ -73,7 +73,7 @@ for k,v in pairs(lines) do
 		  os.execute(cmd)
 	      end
 	  end
-      else 
+      else
 	  cmd = "MP4Box -cat " .. a[3] ..".mp4 -cat " .. newfile .. " -new " .. newfile
 	  print(cmd)
 	  if arg[3] ~= nil then

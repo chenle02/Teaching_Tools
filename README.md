@@ -1,3 +1,4 @@
+%% @format
 ![Lua Land](Gel-on-Moon.jpg)
 
 Some Teaching Tools and Setups
@@ -7,7 +8,8 @@ Some Teaching Tools and Setups
 This is a working page that I am trying to document tools that I am using for teaching online
 multiple sessions of the linear algebra course [Math 221, Fall
 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html). I am using Linux --
-_Ubuntu 20.10_  -- as my operating system, but I believe many tools and setups explained below won't depend on
+_Ubuntu 20.04_  -- as my operating system, but I believe many tools and setups explained below won't depend on
+
 specific operating systems.
 
 <!-- vim-markdown-toc GitLab -->
@@ -66,11 +68,11 @@ $ sed -i 's/<code>&lt;/</g' $file
 $ sed -i 's/&gt;&lt;\/iframe&gt;<\/code>/><\/iframe>/g' $file
 ```
 5. To generate the wordcloud on the course page, install [word_cloud](https://github.com/amueller/word_cloud) and run:
-```sh
+``` sh
 $ wordcloud_cli --text vimwiki/index.wiki --imagefile vimwiki_html/wordcloud.png
 ```
 6. Generate the pichart for the weight, the file is using [weights.r](scripts/weights.r)
-```sh
+``` sh
 $ Rscript weights.r
 ```
 
@@ -94,22 +96,27 @@ $ Rscript weights.r
 
 # Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
-    * White:      #FFFFFF
-    * Pink:       #FB73BE
-    * Coral:      #FF8D71
-    * Yellow:     #FFE066
-    * Teal:       #59F3CE
-    * Light blue: #65D0FA
-    * Blue:	  #4984F2
-    * Purple: 	  #A87DFF
+| Color               | Code      |
+|---------------------|-----------|
+| White               | `#FFFFFF` |
+| Pink                | `#FB73BE` |
+| Coral               | `#FF8D71` |
+| Yellow              | `#FFE066` |
+| Teal                | `#59F3CE` |
+| Light blue          | `#65D0FA` |
+| Blue                | `#4984F2` |
+| Purple              | `#A87DFF` |
+| My Dark back ground | `#0E0E0E` |
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
-3. Below are some example slides (see the [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html) for a complete set of slides for the class of linear algebra)
+4. Below are some example slides (see the [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html) for a complete set of slides for the class of linear algebra)
 
 | Chapter/Section                               | Slides                                                                                        | Slides                                                                              |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Section 3-2. Determinants and Matrix Inverses | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Handout.pdf) |
 | Section 3-3. Diagonalization and Eigenvalues  | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Handout.pdf) |
-4. I wrote this script [split.lua](scripts/split.lua) to split the textbook into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides).
+4. I wrote a lua script [split.lua](textbook/split.lua) to split the textbook ([pdf](textbook/Nicholson-OpenLAWA-2019A.pdf) or [official website](https://lyryx.com/linear-algebra-applications/)) into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides). 
+   * Note: you need to have [pdftk](https://en.wikipedia.org/wiki/PDFtk) in order to run split.lua.
+   * All book sections are under the folder [textbook](textbook/)
 
 # Video processing and animation
 This part is very sketchy right now. I may elaborate it more in the future.
@@ -133,7 +140,7 @@ This part is very sketchy right now. I may elaborate it more in the future.
     3. [MP4Box](https://github.com/gpac/gpac/wiki/MP4Box): used to combine animation video (without sound track with my course videos)
 3. Here is the full workflow with ways of naming files:
     1. The video file should be `mmdd_S#.mp4`, `#` be replaced by `5,6,7`.
-    3Def. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
+    2. `cp 0917_S6_content.txt mmdd_S#_content.txt` Edit the this content file for the section names and etc.
     4. `cp SA-B.txt SA-B_S#.txt` with A-B means Section A.B., for example, Section 8.1 for Section 5 corresponds
        to `S8-1_S5.txt` (this is the parameter file for the title animation).
     5. Edit the parameter file for the title animation `SA-B_S#.txt` and run `./GenTitleVideo.sh SA-B_S#` (without extension) to generate the title videos
@@ -166,17 +173,18 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 ```sh
 $ pandoc -s README.md -o ./site_html/index.html
 ```
+
 # Other misc tools
-I am running Linux -- Ubuntu 20.10. Here are a list of tools that are handy, many of which can also run under Windows or Mac OS:
+I am running Linux -- _Ubuntu 20.04_. Here are a list of tools that are handy, many of which can also run under Windows or Mac OS:
 
 1. The shell: [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) and its [awesome plugins](https://github.com/unixorn/awesome-zsh-plugins)
 2. [tmux](https://github.com/tmux/tmux/wiki) + [neovim](https://github.com/neovim/neovim) + [awesome window manager](https://awesomewm.org/) + [Lualatex](http://www.luatex.org/) + Writing scripts in Lua = "Congratulations! You are on Lua Land now!"
-1. [fzf: A command-line fuzzy finder](https://github.com/junegunn/fzf)
-9. [lazygit: simple terminal UI for git commands](https://github.com/jesseduffield/lazygit) and [tig: Text-mode interface for git](https://github.com/jonas/tig)
-1. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
-4. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
-7. [qutebrowser/qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
-5. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
-1. [neomutt](https://github.com/neomutt/neomutt) configured through [LukeSmithxyz/mutt-wizard: A system for automatically configuring mutt and isync with a simple interface and safe passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address book.
-1. [abook: CLI Address book](https://github.com/hhirsch/abook)
+3. [fzf: A command-line fuzzy finder](https://github.com/junegunn/fzf)
+4. [lazygit: simple terminal UI for git commands](https://github.com/jesseduffield/lazygit) and [tig: Text-mode interface for git](https://github.com/jonas/tig)
+5. [vifm: Vifm is a file manager with curses interface, which provides Vi[m]-like environment for managing objects within file systems, extended with some useful ideas from mutt.](https://github.com/vifm/vifm)
+6. [Rofi: A window switcher, application launcher and dmenu replacement](https://github.com/davatorium/rofi)
+7. [qutebrowser: A keyboard-driven, vim-like browser based on PyQt5.](https://github.com/qutebrowser/qutebrowser)
+8. [calcurse: A text-based calendar and scheduling application](https://github.com/lfos/calcurse)
+9. [neomutt](https://github.com/neomutt/neomutt) configured through [mutt-wizard: A system for automatically configuring mutt and isync with a simple interface and safe passwords](https://github.com/LukeSmithxyz/mutt-wizard), which integrates _abook_ below as the address book.
+10. [abook: CLI Address book](https://github.com/hhirsch/abook)
 

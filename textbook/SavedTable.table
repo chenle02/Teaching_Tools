@@ -1,0 +1,486 @@
+return 
+   {
+   [1] = 
+      {
+      [1] = '1',
+      [2] = '1',
+      [3] = '34',
+      [4] = 'Systems of Linear Equations',
+      },
+   [2] = 
+      {
+      [1] = '1-1',
+      [2] = '1',
+      [3] = '9',
+      [4] = 'Solutions and Elementary Operations',
+      },
+   [3] = 
+      {
+      [1] = '1-2',
+      [2] = '9',
+      [3] = '20',
+      [4] = 'Gaussian Elimination',
+      },
+   [4] = 
+      {
+      [1] = '1-3',
+      [2] = '20',
+      [3] = '27',
+      [4] = 'Homogeneous Equations',
+      },
+   [5] = 
+      {
+      [1] = '1-4',
+      [2] = '27',
+      [3] = '29',
+      [4] = 'An Application to Network Flow',
+      },
+   [6] = 
+      {
+      [1] = '1-5',
+      [2] = '29',
+      [3] = '32',
+      [4] = 'An Application to Electrical Network',
+      },
+   [7] = 
+      {
+      [1] = '1-6',
+      [2] = '32',
+      [3] = '33',
+      [4] = 'An Application to Chemical Reactions',
+      },
+   [8] = 
+      {
+      [1] = '1-S',
+      [2] = '33',
+      [3] = '34',
+      [4] = 'Supplementary Exercises for Chapter 1',
+      },
+   [9] = 
+      {
+      [1] = '2',
+      [2] = '35',
+      [3] = '144',
+      [4] = 'Matrix Algebra',
+      },
+   [10] = 
+      {
+      [1] = '2-1',
+      [2] = '35',
+      [3] = '47',
+      [4] = 'Matrix Addition and Scalar Multiplication and Transportation',
+      },
+   [11] = 
+      {
+      [1] = '2-2',
+      [2] = '47',
+      [3] = '64',
+      [4] = 'Matrix-Vector Multiplication',
+      },
+   [12] = 
+      {
+      [1] = '2-3',
+      [2] = '64',
+      [3] = '80',
+      [4] = 'Matrix Multiplication',
+      },
+   [13] = 
+      {
+      [1] = '2-4',
+      [2] = '80',
+      [3] = '95',
+      [4] = 'Matrix Inverses',
+      },
+   [14] = 
+      {
+      [1] = '2-5',
+      [2] = '95',
+      [3] = '104',
+      [4] = 'Elementary Matrices',
+      },
+   [15] = 
+      {
+      [1] = '2-6',
+      [2] = '104',
+      [3] = '118',
+      [4] = 'Linear Transformations',
+      },
+   [16] = 
+      {
+      [1] = '2-7',
+      [2] = '118',
+      [3] = '128',
+      [4] = 'LU-Factorization',
+      },
+   [17] = 
+      {
+      [1] = '2-8',
+      [2] = '128',
+      [3] = '134',
+      [4] = 'An Application to Input-Output Economic Model',
+      },
+   [18] = 
+      {
+      [1] = '2-9',
+      [2] = '134',
+      [3] = '143',
+      [4] = 'An application to Markov Chains',
+      },
+   [19] = 
+      {
+      [1] = '2-S',
+      [2] = '143',
+      [3] = '144',
+      [4] = 'Supplementary Exercises for Chapter 2',
+      },
+   [20] = 
+      {
+      [1] = '3',
+      [2] = '145',
+      [3] = '208',
+      [4] = 'Determinants and Diagonalization',
+      },
+   [21] = 
+      {
+      [1] = '3-1',
+      [2] = '145',
+      [3] = '158',
+      [4] = 'The Cofactor Expansion',
+      },
+   [22] = 
+      {
+      [1] = '3-2',
+      [2] = '158',
+      [3] = '171',
+      [4] = 'Determinants and Matrix Inverses',
+      },
+   [23] = 
+      {
+      [1] = '3-3',
+      [2] = '171',
+      [3] = '192',
+      [4] = 'Diagonalization and Eigenvalues',
+      },
+   [24] = 
+      {
+      [1] = '3-4',
+      [2] = '192',
+      [3] = '198',
+      [4] = 'An Application to Linear Recurrences',
+      },
+   [25] = 
+      {
+      [1] = '3-5',
+      [2] = '198',
+      [3] = '204',
+      [4] = 'An Application to Systems of Differential Equations',
+      },
+   [26] = 
+      {
+      [1] = '3-6',
+      [2] = '204',
+      [3] = '208',
+      [4] = 'Proof of the Cofactor Expansion Theorem',
+      },
+   [27] = 
+      {
+      [1] = '3-S',
+      [2] = '208',
+      [3] = '208',
+      [4] = 'Supplementary Exercises for Chapter 3',
+      },
+   [28] = 
+      {
+      [1] = '4',
+      [2] = '209',
+      [3] = '262',
+      [4] = 'Vector Geometry',
+      },
+   [29] = 
+      {
+      [1] = '4-1',
+      [2] = '209',
+      [3] = '226',
+      [4] = 'Vectors and Lines',
+      },
+   [30] = 
+      {
+      [1] = '4-2',
+      [2] = '226',
+      [3] = '244',
+      [4] = 'Projections and Planes',
+      },
+   [31] = 
+      {
+      [1] = '4-3',
+      [2] = '244',
+      [3] = '250',
+      [4] = 'More on the Cross Product',
+      },
+   [32] = 
+      {
+      [1] = '4-4',
+      [2] = '250',
+      [3] = '258',
+      [4] = 'Linear Operators on R3',
+      },
+   [33] = 
+      {
+      [1] = '4-5',
+      [2] = '258',
+      [3] = '261',
+      [4] = 'An Application to Computer Graphics',
+      },
+   [34] = 
+      {
+      [1] = '4-S',
+      [2] = '261',
+      [3] = '262',
+      [4] = 'Supplementary Exercises for Chapter 4',
+      },
+   [35] = 
+      {
+      [1] = '5',
+      [2] = '263',
+      [3] = '328',
+      [4] = 'Vector Space Rn',
+      },
+   [36] = 
+      {
+      [1] = '5-1',
+      [2] = '263',
+      [3] = '271',
+      [4] = 'Subspaces and Spanning',
+      },
+   [37] = 
+      {
+      [1] = '5-2',
+      [2] = '271',
+      [3] = '282',
+      [4] = 'Independent and Dimension',
+      },
+   [38] = 
+      {
+      [1] = '5-3',
+      [2] = '282',
+      [3] = '290',
+      [4] = 'Orthogonality',
+      },
+   [39] = 
+      {
+      [1] = '5-4',
+      [2] = '290',
+      [3] = '298',
+      [4] = 'Rank of a Matrix',
+      },
+   [40] = 
+      {
+      [1] = '5-5',
+      [2] = '298',
+      [3] = '310',
+      [4] = 'Similarity and Diagonalization',
+      },
+   [41] = 
+      {
+      [1] = '5-6',
+      [2] = '310',
+      [3] = '322',
+      [4] = 'Best Approximation and Least Squares',
+      },
+   [42] = 
+      {
+      [1] = '5-7',
+      [2] = '322',
+      [3] = '327',
+      [4] = 'An Application to Correlation and Variance',
+      },
+   [43] = 
+      {
+      [1] = '5-S',
+      [2] = '327',
+      [3] = '328',
+      [4] = 'Supplementary Exercises for Chapter 5',
+      },
+   [44] = 
+      {
+      [1] = '6',
+      [2] = '329',
+      [3] = '374',
+      [4] = 'Vector Spaces',
+      },
+   [45] = 
+      {
+      [1] = '6-1',
+      [2] = '329',
+      [3] = '338',
+      [4] = 'Examples and Basic Properties',
+      },
+   [46] = 
+      {
+      [1] = '6-2',
+      [2] = '338',
+      [3] = '345',
+      [4] = 'Subspaces and Spanning Sets',
+      },
+   [47] = 
+      {
+      [1] = '6-3',
+      [2] = '345',
+      [3] = '354',
+      [4] = 'Linear Independence and Dimensions',
+      },
+   [48] = 
+      {
+      [1] = '6-4',
+      [2] = '354',
+      [3] = '363',
+      [4] = 'Finite Dimensional Spaces',
+      },
+   [49] = 
+      {
+      [1] = '6-5',
+      [2] = '363',
+      [3] = '368',
+      [4] = 'An Application to Polynomials',
+      },
+   [50] = 
+      {
+      [1] = '6-6',
+      [2] = '368',
+      [3] = '373',
+      [4] = 'An Application to Differential Equations',
+      },
+   [51] = 
+      {
+      [1] = '6-S',
+      [2] = '373',
+      [3] = '374',
+      [4] = 'Supplementary Exercises for Chapter 6',
+      },
+   [52] = 
+      {
+      [1] = '7',
+      [2] = '375',
+      [3] = '414',
+      [4] = 'Linear Transformations',
+      },
+   [53] = 
+      {
+      [1] = '7-1',
+      [2] = '375',
+      [3] = '382',
+      [4] = 'Examples and Elementary Properties',
+      },
+   [54] = 
+      {
+      [1] = '7-2',
+      [2] = '382',
+      [3] = '392',
+      [4] = 'Kernel and Image of a Linear Transformation',
+      },
+   [55] = 
+      {
+      [1] = '7-3',
+      [2] = '392',
+      [3] = '402',
+      [4] = 'Isomorphisms and Composition',
+      },
+   [56] = 
+      {
+      [1] = '7-4',
+      [2] = '402',
+      [3] = '405',
+      [4] = 'A Theorem about Differential Equations',
+      },
+   [57] = 
+      {
+      [1] = '7-5',
+      [2] = '405',
+      [3] = '414',
+      [4] = 'More on Linear Recurrences',
+      },
+   [58] = 
+      {
+      [1] = '8',
+      [2] = '415',
+      [3] = '502',
+      [4] = 'Orthogonality',
+      },
+   [59] = 
+      {
+      [1] = '8-1',
+      [2] = '415',
+      [3] = '424',
+      [4] = 'Orthogonal Complements and Projections',
+      },
+   [60] = 
+      {
+      [1] = '8-2',
+      [2] = '424',
+      [3] = '433',
+      [4] = 'Orthogonal Diagonalization',
+      },
+   [61] = 
+      {
+      [1] = '8-3',
+      [2] = '433',
+      [3] = '437',
+      [4] = 'Positive Definite Matrices',
+      },
+   [62] = 
+      {
+      [1] = '8-4',
+      [2] = '437',
+      [3] = '441',
+      [4] = 'QR-Factorization',
+      },
+   [63] = 
+      {
+      [1] = '8-5',
+      [2] = '441',
+      [3] = '445',
+      [4] = 'Computing Eigenvalues',
+      },
+   [64] = 
+      {
+      [1] = '8-6',
+      [2] = '445',
+      [3] = '461',
+      [4] = 'The Singular Value Decomposition',
+      },
+   [65] = 
+      {
+      [1] = '8-7',
+      [2] = '461',
+      [3] = '472',
+      [4] = 'Complex Matrices',
+      },
+   [66] = 
+      {
+      [1] = '8-8',
+      [2] = '472',
+      [3] = '487',
+      [4] = 'An Application to Linear Codes over Finite Fields',
+      },
+   [67] = 
+      {
+      [1] = '8-9',
+      [2] = '487',
+      [3] = '497',
+      [4] = 'An Application to Quadratic Forms',
+      },
+   [68] = 
+      {
+      [1] = '8-10',
+      [2] = '497',
+      [3] = '500',
+      [4] = 'An Application to Constrained Optimization',
+      },
+   [69] = 
+      {
+      [1] = '8-11',
+      [2] = '500',
+      [3] = '502',
+      [4] = 'An Application to Statistical Principal Component Analysis',
+      },
+   }
