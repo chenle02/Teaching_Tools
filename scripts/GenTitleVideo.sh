@@ -3,5 +3,4 @@
 
 cp $1.txt .Section.txt
 python3 -m manim math221.py Section_X
-cd -
 cp ./media/videos/math221/1440p60/Section_X.mp4 $1.mp4

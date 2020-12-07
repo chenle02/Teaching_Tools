@@ -9,7 +9,6 @@ This is a working page that I am trying to document tools that I am using for te
 multiple sessions of the linear algebra course [Math 221, Fall
 2020](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html). I am using Linux --
 _Ubuntu 20.04_  -- as my operating system, but I believe many tools and setups explained below won't depend on
-
 specific operating systems.
 
 <!-- vim-markdown-toc GitLab -->
@@ -110,7 +109,7 @@ $ Rscript weights.r
 | My Dark back ground | `#0E0E0E` |
 
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
-4. Below are some example slides (see the [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/math221_2020_Fall.html) for a complete set of slides for the class of linear algebra)
+4. Below are some example slides (see the [course page](http://math.emory.edu/~lchen39/teaching/2020_Fall/math221_2020_Fall.html)k for a complete set of slides for the class of linear algebra)
 
 | Chapter/Section                               | Slides                                                                                        | Slides                                                                              |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
