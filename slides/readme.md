@@ -1,6 +1,8 @@
 # Some requirement:
 1. I am using `lualatex` to compile. You may change that to `pdflatex`
 2. You need install `lua` to run the scripts.
+3. If you use `neovim`,  there are some useful commands in [command.vim](command.vim), where you can
+	 hit `<leader><leader>` to compile and `<leader><space>` to show pdf file using `zathura`.
 
 # Workflow to generate all slides for the class.
 1. Edit [TOC.lua](TOC.lua) file for the meta data.
