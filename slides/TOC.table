@@ -2,6 +2,7 @@ return
    {
    [1] = 
       {
+      Chapter = 'Chapter 6: Point Estimation',
       Section = 
          {
          [1] = '6.1 Descriptive Statistics',
@@ -13,10 +14,11 @@ return
          [7] = '6.7 Sufficient Statistics',
          [8] = '6.8 Bayesian Estimation',
          },
-      Chapter = 'Chapter 6: Point Estimation',
+      ChapterNum = 6,
       },
    [2] = 
       {
+      Chapter = 'Chapter 7: Interval Estimation',
       Section = 
          {
          [1] = '7.1 Confidence Intervals for Means',
@@ -27,10 +29,11 @@ return
          [6] = '7.6 More Regression',
          [7] = '7.7 Resampling Methods',
          },
-      Chapter = 'Chapter 7: Interval Estimation',
+      ChapterNum = 7,
       },
    [3] = 
       {
+      Chapter = 'Chapter 8: Tests of Statistical Hypothesis',
       Section = 
          {
          [1] = '8.1 Tests About One Mean',
@@ -42,10 +45,11 @@ return
          [7] = '8.7 Best Critical Regions',
          [8] = '8.8 Likelihood Ratio Test',
          },
-      Chapter = 'Chapter 8: Tests of Statistical Hypothesis',
+      ChapterNum = 8,
       },
    [4] = 
       {
+      Chapter = 'Chapter 9: More Tests',
       Section = 
          {
          [1] = '9.1 Chi-Square Goodness-of-Fit Test',
@@ -56,15 +60,15 @@ return
          [6] = '9.6 Tests Concerning Regression and Correlation',
          [7] = '9.7 Statistical Quality Control',
          },
-      Chapter = 'Chapter 9: More Tests',
+      ChapterNum = 9,
       },
    [0] = 
       {
+      University = 'Auburn University',
+      Year_Season = '2021 Fall',
+      Email = 'le.chen@auburn.edu',
       Course_Name = 'STAT 3610: Probability and Statistics II',
       Author = 'Le Chen',
-      Email = 'le.chen@auburn.edu',
-      Year_Season = '2021 Fall',
-      University = 'Auburn University',
       City = 'Auburn, AL',
       },
    }

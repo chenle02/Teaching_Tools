@@ -3,6 +3,8 @@
 *.aux
 *.bbl
 *.log
+*.smn
+*.nav
 *.blg
 *.synctex.gz
 tmp.tex

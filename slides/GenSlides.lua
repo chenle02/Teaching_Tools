@@ -3,7 +3,7 @@ if #arg == 0  then
     print(arg[0] .. " [Yes]")
     print([[
 
-    Make sure first edit TOC.lua and run it to generate TOC.table.
+    Make sure first edit TOC.lua for the meta data.
 
         By Le Chen;
         chenle02@gmail.com
@@ -27,7 +27,7 @@ os.execute("sed -i 's/#Course_Name/" .. TOC[0]['Course_Name'] .. "/g' Common.tex
 
 -- Now generate all chapter-#.tex
 for i=1,#TOC do
-    Chapter_Number = i+5
+    Chapter_Number = TOC[i]['ChapterNum']
     Chapter_File = "Chapter-" .. Chapter_Number .. ".tex"
     os.execute("cp Chapter-#.tex ".. Chapter_File)
     os.execute("sed -i 's/#Chapter/" .. TOC[i]['Chapter'] .. "/g' " .. Chapter_File)
