@@ -1,0 +1,70 @@
+return 
+   {
+   [1] = 
+      {
+      Section = 
+         {
+         [1] = '6.1 Descriptive Statistics',
+         [2] = '6.2 Exploratory Data Analysis',
+         [3] = '6.3 Order Statistics',
+         [4] = '6.4 Maximum Likelihood and Method of Moments Estimation',
+         [5] = '6.5 A Simple Regression Problem',
+         [6] = '6.6 Asymptotic Distributions of Maximum Likelihood Estimators',
+         [7] = '6.7 Sufficient Statistics',
+         [8] = '6.8 Bayesian Estimation',
+         },
+      Chapter = 'Chapter 6: Point Estimation',
+      },
+   [2] = 
+      {
+      Section = 
+         {
+         [1] = '7.1 Confidence Intervals for Means',
+         [2] = '7.2 Confidence Intervals for the Difference of Two Means',
+         [3] = '7.3 Confidence Intervals for Proportions',
+         [4] = '7.4 Sample Size',
+         [5] = '7.5 Distribution-Free Confidence Intervals for Percentiles',
+         [6] = '7.6 More Regression',
+         [7] = '7.7 Resampling Methods',
+         },
+      Chapter = 'Chapter 7: Interval Estimation',
+      },
+   [3] = 
+      {
+      Section = 
+         {
+         [1] = '8.1 Tests About One Mean',
+         [2] = '8.2 Tests of the Equality of Two Means',
+         [3] = '8.3 Test for Variances',
+         [4] = '8.4 Tests About Proportions',
+         [5] = '8.5 Some Distribution-Free Tests',
+         [6] = '8.6 Power of a Statistical Test',
+         [7] = '8.7 Best Critical Regions',
+         [8] = '8.8 Likelihood Ratio Test',
+         },
+      Chapter = 'Chapter 8: Tests of Statistical Hypothesis',
+      },
+   [4] = 
+      {
+      Section = 
+         {
+         [1] = '9.1 Chi-Square Goodness-of-Fit Test',
+         [2] = '9.2 Contingency Tables',
+         [3] = '9.3 One-Factor Analysis of Variance',
+         [4] = '9.4 Two-Way Analysis of Variance',
+         [5] = '9.5 General Factorial and $2^k$ Factorial Designs',
+         [6] = '9.6 Tests Concerning Regression and Correlation',
+         [7] = '9.7 Statistical Quality Control',
+         },
+      Chapter = 'Chapter 9: More Tests',
+      },
+   [0] = 
+      {
+      Course_Name = 'STAT 3610: Probability and Statistics II',
+      Author = 'Le Chen',
+      Email = 'le.chen@auburn.edu',
+      Year_Season = '2021 Fall',
+      University = 'Auburn University',
+      City = 'Auburn, AL',
+      },
+   }
