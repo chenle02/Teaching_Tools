@@ -1,0 +1,327 @@
+\setbeamercovered{dynamic}
+\usepackage{etex}
+\usepackage{graphicx,url,psfrag}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calc,decorations.fractals,through,shapes,patterns,arrows.meta,decorations.pathreplacing,arrows,shapes}
+% \usepackage[center]{subfigure}
+\usepackage{enumerate}
+\usepackage[makeroom]{cancel}
+\usepackage{mathtools}
+\usepackage{graphbox}
+\usepackage{amssymb}
+% \usepackage[showframe]{geometry}
+% \usepackage{enumitem}
+
+%
+% for warning sign
+%
+\usepackage{stackengine}
+\usepackage{scalerel}
+\usepackage{xcolor}
+\newcommand\dangersign[1][2ex]{%
+  \renewcommand\stacktype{L}%
+  \scaleto{\stackon[1.3pt]{\color{red}$\triangle$}{\tiny !}}{#1}%
+}
+% %  The following is to show codes:
+\usepackage{listings}
+% \usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\lstset{language=Java}
+
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+}
+% \usepackage[usenames,dvipsnames]{color}
+% \lstset{
+%   language=R,                     % the language of the code
+%   basicstyle=\tiny\ttfamily, % the size of the fonts that are used for the code
+%   numbers=left,                   % where to put the line-numbers
+%   numberstyle=\tiny\color{Blue},  % the style that is used for the line-numbers
+%   stepnumber=1,                   % the step between two line-numbers. If it is 1, each line
+%                                   % will be numbered
+%   numbersep=5pt,                  % how far the line-numbers are from the code
+%   backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+%   showspaces=false,               % show spaces adding particular underscores
+%   showstringspaces=false,         % underline spaces within strings
+%   showtabs=false,                 % show tabs within strings adding particular underscores
+%   frame=single,                   % adds a frame around the code
+%   rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+%   tabsize=2,                      % sets default tabsize to 2 spaces
+%   captionpos=b,                   % sets the caption-position to bottom
+%   breaklines=true,                % sets automatic line breaking
+%   breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+%   keywordstyle=\color{RoyalBlue},      % keyword style
+%   commentstyle=\color{YellowGreen},   % comment style
+%   stringstyle=\color{ForestGreen}      % string literal style
+% }
+
+% \usepackage[dvipsnames]{xcolor}
+% \newcommand{\Cross}{\mathbin{\tikz [x=1.4ex,y=1.4ex,line width=.2ex] \draw (0,0) -- (1,1) (0,1) -- (1,0);}}%
+\newcommand{\Crossme}[1]{\!\!
+\tikz [black,x=1.1em,y=1.1em,line width=.4ex]
+\draw (-0.5,-0.5) -- (0,0) node {\footnotesize #1} -- (0.5,0.5) (0.5,-0.5) -- (-0.5,0.5);}%
+\newcommand{\Checkme}[1]{\!\!
+\tikz [x=1.1em,y=1.1em,line width=.4ex]
+\draw [black] (0,0.7) -- (0.3,0) --(0.9,1.0) (0.5,0.5) node {\footnotesize #1};}
+% \beamerdefaultoverlayspecification{<+-| alert@+>} %(this will show line by line)
+\beamerdefaultoverlayspecification{<+->} %(this will show line by
+
+% \usepackage{natbib}
+% \input{../myMathSymbols.tex}
+% \newcommand{\tlMr}[4]{\:{}^{\hspace{0.2em}#1}_{#2} \hspace{-0.1em}#3_{#4}}
+
+% Smiley face\Smiley{} \Frowny{}
+\usepackage{marvosym}
+% -------------------------------------------------
+%  Set directory for figs
+% -------------------------------------------------
+\usepackage{grffile}
+\graphicspath{{Codes/}}
+% -------------------------------------------------
+%  Define colors
+% -------------------------------------------------
+\def\refcolor{cyan}
+\newcommand{\myref}[1]{\small {\em #1}}
+\def\excolor{brown}
+% \usepackage{color}
+% \usepackage[dvipsnames]{xcolor}
+
+
+% % % Define danger sign
+\newcommand*{\TakeFourierOrnament}[1]{{%
+\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+\newcommand*{\danger}{\TakeFourierOrnament{66}}
+
+
+% -------------------------------------------------
+%  Define short-hand symbols.
+% -------------------------------------------------
+\newcommand{\B}{\textbf{B}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\W}{\dot{W}}
+\newcommand{\ud}{\ensuremath{\mathrm{d}}}
+\newcommand{\Ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\Floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\Lad}{\text{L}_{\text{ad}}^2}
+\newcommand{\SI}[1]{\mathcal{I}\left[#1 \right]}
+\newcommand{\SIB}[2]{\mathcal{I}_{#2}\left[#1 \right]}
+\newcommand{\Indt}[1]{1_{\left\{#1 \right\}}}
+\newcommand{\LadInPrd}[1]{\left\langle #1 \right\rangle_{\text{L}_\text{ad}^2}}
+\newcommand{\LadNorm}[1]{\left|\left|  #1 \right|\right|_{\text{L}_\text{ad}^2}}
+\newcommand{\Norm}[1]{\left|\left|  #1   \right|\right|}
+\newcommand{\Ito}{It\^{o} }
+\newcommand{\Itos}{It\^{o}'s }
+\newcommand{\spt}[1]{\text{supp}\left(#1\right)}
+\newcommand{\InPrd}[1]{\left\langle #1 \right\rangle}
+\newcommand{\mr}{\textbf{r}}
+\newcommand{\Ei}{\text{Ei}}
+\newcommand{\arctanh}{\operatorname{arctanh}}
+\newcommand{\ind}[1]{\mathbb{I}_{\left\{ {#1} \right\} }}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\Cov}{\text{Cov}}
+\newcommand{\Corr}{\text{Corr}}
+
+\newcommand{\baseurl}[1]{\footnotesize\url{http://math.emory.edu/~lchen41/teaching/2020_Spring/#1}}
+
+
+\newcommand*\mystrut[1]{\vrule width0pt height0pt depth#1\relax} % adding vertical space
+
+\DeclareMathOperator{\esssup}{\ensuremath{ess\,sup}}
+
+\newcommand{\steps}[1]{\vskip 0.3cm \textbf{#1}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calK}{\mathcal{K}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calI}{\mathcal{I}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\myVec}[1]{\overrightarrow{#1}}
+\newcommand{\sincos}{\begin{array}{c} \cos \\ \sin \end{array}\!\!}
+\newcommand{\CvBc}[1]{\left\{\:#1\:\right\}}
+\newcommand*{\one}{{{\rm 1\mkern-1.5mu}\!{\rm I}}}
+
+\newcommand{\OneFrame}[1]{
+\begin{enumerate}\item[#1] \phantom{av} \\[20em]\vfill\phantom{av}\myEnd\end{enumerate}}
+
+\newcommand{\bH}{\ensuremath{\mathrm{H}}}
+\newcommand{\Ai}{\ensuremath{\mathrm{Ai}}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\myEnd}{\hfill$\square$}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\Shi}{\text{Shi}}
+\newcommand{\Chi}{\text{Chi}}
+\newcommand{\Erf}{\ensuremath{\mathrm{erf}}}
+\newcommand{\Erfc}{\ensuremath{\mathrm{erfc}}}
+\newcommand{\He}{\ensuremath{\mathrm{He}}}
+\newcommand{\Res}{\ensuremath{\mathrm{Res}}}
+
+\newcommand{\mySeparateLine}{\begin{center}
+ \makebox[\linewidth]{\rule{0.6\paperwidth}{0.4pt}}
+\end{center}}
+
+\theoremstyle{definition}
+% \newtheorem{definition}[theorem]{Definition}
+% \newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\theoremstyle{plain}
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{corollary}[theorem]{Corollary}
+% \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\mode<presentation>
+{
+%      \usetheme{Warsaw}
+%     \usetheme{JuanLesPins}
+%  \usetheme{Hannover}
+%  \usetheme{Montpellier}
+   \useoutertheme{default}
+  % or ...
+
+  \setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+ \setbeamertemplate{frametitle}{
+  \begin{centering}
+    \color{blue}
+    {\insertframetitle}
+    \par
+  \end{centering}
+  }
+}
+\usefoottemplate{\hfill \insertframenumber{}}
+% \inserttotalframenumber
+
+\usepackage[english]{babel}
+% or whatever
+
+% \usepackage[latin1]{inputenc}
+% or whatever
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+% \DeclareMathOperator{\Lip}{Lip}
+\DeclareMathOperator{\lip}{l}
+% \DeclareMathOperator{\Vip}{\overline{v}}
+% \DeclareMathOperator{\vip}{\underline{v}}
+% \DeclareMathOperator{\vv}{v}
+% \DeclareMathOperator{\BC}{BC}
+% \DeclareMathOperator{\CH}{CD}
+
+\usepackage{pgfpages}
+% \setbeameroption{show notes}
+% \setbeamertemplate{note page}[plain]
+% \setbeameroption{second mode text on second screen=right}
+% \setbeameroption{show notes on second screen=right}
+%
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+% \AtBeginSubsection[]
+% {
+%   \begin{frame}<beamer>{Outline}
+%     \tableofcontents[currentsection,currentsubsection]
+%   \end{frame}
+% }
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+% \beamerdefaultoverlayspecification{<+->}
+
+% % % % % % % % % % % % % % % % % % %
+%  Define a block
+% % % % % % % % % % % % % % % % % % %
+\newenvironment<>{problock}[1]{%
+  \begin{actionenv}#2%
+      \def\insertblocktitle{#1}%
+      \par%
+      \mode<presentation>{%
+        \setbeamercolor{block title}{fg=white,bg=olive!95!black}
+       \setbeamercolor{block body}{fg=black,bg=olive!25!white}
+       \setbeamercolor{itemize item}{fg=white!20!white}
+       \setbeamertemplate{itemize item}[triangle]
+     }%
+      \usebeamertemplate{block begin}}
+    {\par\usebeamertemplate{block end}\end{actionenv}}
+
+\newenvironment<>{assblock}[1]{%
+  \begin{actionenv}#2%
+      \def\insertblocktitle{#1}%
+      \par%
+      \mode<presentation>{%
+        \setbeamercolor{block title}{fg=white,bg=green!50!black}
+       \setbeamercolor{block body}{fg=black,bg=green!10}
+       \setbeamercolor{itemize item}{fg=green!80!black}
+       \setbeamertemplate{itemize item}[triangle]
+     }%
+      \usebeamertemplate{block begin}}
+    {\par\usebeamertemplate{block end}\end{actionenv}}
+
+
+

@@ -1,0 +1,39 @@
+\documentclass[compress,trans,9pt]{beamer}
+% \documentclass[9pt]{beamer}
+%\documentclass[compress,9pt,usenames,dvipsnames]{beamer}
+% \usepackage[utf8]{inputenc}
+% \includeonlyframes{current}
+\input{Common}
+\input{Title}
+
+\begin{document}
+
+\AtBeginSection[]
+  {
+     \begin{frame}<beamer>
+     \tableofcontents[currentsection]
+     \end{frame}
+  }
+
+\begin{frame}[noframenumbering]
+  \titlepage
+\end{frame}
+
+
+% \begin{frame}{Outline}
+%   \tableofcontents
+%   % You might wish to add the option [pausesections]
+% \end{frame}
+
+\newcommand{\myChapter}{Chapter 1. Topics in calculus}
+\newcommand{\mySection}[1]{\section{\S\: #1}\begin{frame}{\myChapter}\tableofcontents[currentsection]\end{frame}}
+\begin{frame}
+\begin{center}
+\huge
+\myChapter
+\end{center}
+\end{frame}
+\input{Section_1-1}
+\input{Section_1-2}
+\input{Section_1-3}
+\end{document}

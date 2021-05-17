@@ -1,0 +1,27 @@
+\documentclass[compress,trans,9pt]{beamer}
+% \documentclass[9pt]{beamer}
+%\documentclass[compress,9pt,usenames,dvipsnames]{beamer}
+% \usepackage[utf8]{inputenc}
+% \includeonlyframes{current}
+\input{Common}
+\input{Title}
+
+\begin{document}
+
+\AtBeginSection[]
+  {
+     \begin{frame}<beamer>
+     \tableofcontents[currentsection]
+     \end{frame}
+  }
+
+\begin{frame}[noframenumbering]
+  \titlepage
+\end{frame}
+
+
+% \begin{frame}{Outline}
+%   \tableofcontents
+%   % You might wish to add the option [pausesections]
+% \end{frame}
+

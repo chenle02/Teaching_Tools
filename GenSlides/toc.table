@@ -1,0 +1,35 @@
+return 
+   {
+   [1] = 
+      {
+      Name = 'Topics in calculus',
+      Number = 1,
+      Sections = 
+         {
+         [1] = 'Various continuities',
+         [2] = 'Techniques for integrations',
+         [3] = 'Taylor expansions',
+         },
+      },
+   [2] = 
+      {
+      Name = 'Topics in real analysis',
+      Number = 2,
+      Sections = 
+         {
+         [1] = 'Liminf and limsup',
+         [2] = 'Lebesgue integral and basic properties',
+         [3] = 'Various convergences',
+         },
+      },
+   [3] = 
+      {
+      Name = 'Topics in linear algebra',
+      Number = 3,
+      Sections = 
+         {
+         [1] = 'Vector spaces',
+         [2] = 'Various matrix decompositions',
+         },
+      },
+   }
