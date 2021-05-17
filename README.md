@@ -109,7 +109,8 @@ $ Rscript weights.r
 | My Dark back ground | `#0E0E0E` |
 
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
-4. Below are some example slides (see the [course page](http://math.emory.edu/~lchen39/teaching/2020_Fall/math221_2020_Fall.html)k for a complete set of slides for the class of linear algebra)
+3. Below are some example slides (see the [course page](http://math.emory.edu/~lchen39/teaching/2020_Fall/math221_2020_Fall.html)k for a complete set of slides for the class of linear algebra)
+4. Here are some scripts to generate the skeleton of a course slides: [GenSlides](GenSlides.md)
 
 | Chapter/Section                               | Slides                                                                                        | Slides                                                                              |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
