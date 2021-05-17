@@ -110,7 +110,6 @@ $ Rscript weights.r
 
 2. Beamer dark theme: [DBT](https://github.com/pblottiere/dark-beamer-theme)
 3. Below are some example slides (see the [course page](http://math.emory.edu/~lchen39/teaching/2020_Fall/math221_2020_Fall.html)k for a complete set of slides for the class of linear algebra)
-4. Here are some scripts to generate the skeleton of a course slides: [GenSlides](GenSlides.md)
 
 | Chapter/Section                               | Slides                                                                                        | Slides                                                                              |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
@@ -119,6 +118,7 @@ $ Rscript weights.r
 4. I wrote a lua script [split.lua](textbook/split.lua) to split the textbook ([pdf](textbook/Nicholson-OpenLAWA-2019A.pdf) or [official website](https://lyryx.com/linear-algebra-applications/)) into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides). 
    * Note: you need to have [pdftk](https://en.wikipedia.org/wiki/PDFtk) in order to run split.lua.
    * All book sections are under the folder [textbook](textbook/)
+5. Here are some scripts to generate the skeleton of a course slides: [GenSlides](GenSlides/readme.md)
 
 # Video processing and animation
 This part is very sketchy right now. I may elaborate it more in the future.
