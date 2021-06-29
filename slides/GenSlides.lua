@@ -3,40 +3,38 @@ if #arg == 0  then
     print(arg[0] .. " [Yes]")
     print([[
 
-    Make sure first edit TOC.lua for the meta data.
+    Make sure first edit TOC.lua and run it to generate TOC.table.
 
         By Le Chen;
         chenle02@gmail.com
-        2021-04-24 Sat 09:26:57
+        Sat 15 May 2021 08:43:09 PM EDT
     ]])
     return
+ end
+
+
+toc = dofile("toc.table")
+
+for i=1,#toc do
+  ConfFile = 'Chapter-' .. toc[i]['Number'] .. '.conf'
+  file = io.open(ConfFile,'w')
+  file:write('\\newcommand{\\myChapter}{Chapter ' .. toc[i]['Number'] .. '. ' .. toc[i]['Name'] .. '}\n')
+  file:write('\\newcommand{\\mySection}[1]{\\section{\\S\\: #1}\\begin{frame}{\\myChapter}\\tableofcontents[currentsection]\\end{frame}}\n')
+  file:write("\\begin{frame}\n")
+  file:write("\\begin{center}\n")
+  file:write("\\huge\n")
+  file:write("\\myChapter\n")
+  file:write("\\end{center}\n")
+  file:write("\\end{frame}\n")
+  for j=1,#toc[i]['Sections'] do
+      Section = 'Section_' .. toc[i]['Number'] .. '-' .. j
+      SectionFile = Section .. '.tex'
+      fileSec = io.open(SectionFile,'w')
+      file:write("\\include{".. Section .. '}\n')
+      fileSec:write('\\mySection{' .. toc[i]['Number'] .. '.' .. j .. ' ' .. toc[i]['Sections'][j] .. '}')
+      fileSec:close()
+  end
+  file:write("\\end{document}")
 end
+file:close()
 
-TOC = dofile("TOC.table")
-
-print("There are " .. #TOC .. " Chapters")
-
--- First update Common.tex file
-os.execute("cp .Common.tex Common.tex")
-os.execute("sed -i 's/#University/" .. TOC[0]['University'] .. "/g' Common.tex")
-os.execute("sed -i 's/#City/" .. TOC[0]['City'] .. "/g' Common.tex")
-os.execute("sed -i 's/#Year_Season/" .. TOC[0]['Year_Season'] .. "/g' Common.tex")
-os.execute("sed -i 's/#Email/" .. TOC[0]['Email'] .. "/g' Common.tex")
-os.execute("sed -i 's/#Author/" .. TOC[0]['Author'] .. "/g' Common.tex")
-os.execute("sed -i 's/#Course_Name/" .. TOC[0]['Course_Name'] .. "/g' Common.tex")
-
--- Now generate all chapter-#.tex
-for i=1,#TOC do
-    Chapter_Number = TOC[i]['ChapterNum']
-    Chapter_File = "Chapter-" .. Chapter_Number .. ".tex"
-    os.execute("cp Chapter-#.tex ".. Chapter_File)
-    os.execute("sed -i 's/#Chapter/" .. TOC[i]['Chapter'] .. "/g' " .. Chapter_File)
-    for s=1,#TOC[i]['Section'] do
-        print("There are " .. #TOC[i]['Section'] .. " Sections.")
-        Section_Name = "Section_"..Chapter_Number .. "-" .. s
-        Section_File = Section_Name .. ".tex"
-        os.execute("echo '\\\\include{" .. Section_Name .. "}' >> " .. Chapter_File)
-        os.execute("echo '\\\\mySection{" .. TOC[i]['Section'][s] .. "}' >" .. Section_File)
-    end
-    os.execute("echo '\\\\end{document}' >> " .. Chapter_File)
-end

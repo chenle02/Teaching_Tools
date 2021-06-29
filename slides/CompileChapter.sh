@@ -15,7 +15,7 @@ fi
 
 SourceFile="Chapter-"$1".tex"
 cp $SourceFile tmp.tex
-sed -i -e '/include/!d' -e 's/include/includeonly/' tmp.tex
+sed -i -e '/include/!d' -e 's/\include/\\\includeonly/' tmp.tex
 # The tmp.tex takes the following form now:
 # \\includeonly{Section_5-1}
 # \\includeonly{Section_5-2}
@@ -30,7 +30,7 @@ sed -i -e '/include/!d' -e 's/include/includeonly/' tmp.tex
 # The first line is
 # \documentclass[compress,trans,9pt]{beamer}
 ChapterFull="Chapter-"$1"_full.tex"
-ChapterComp="Chapter-"$1"_comp.tex"
+ChapterComp="Chapter-"$1"_compact.tex"
 # echo "$ChapterComp"
 # echo "$ChapterComp"
 # File names are:
@@ -46,7 +46,7 @@ lualatex --batchmode $ChapterFull
 lualatex --batchmode $ChapterFull
 # Save the pdfs for the chapters.
 mv "Chapter-"$1"_full.pdf" f.pdf
-mv "Chapter-"$1"_comp.pdf" c.pdf
+mv "Chapter-"$1"_compact.pdf" c.pdf
 
 sed -i '3 i \\\includeonly{TOINCLUDE}' $ChapterFull
 sed -i '3 i \\\includeonly{TOINCLUDE}' $ChapterComp
@@ -56,7 +56,7 @@ while read p; do
 	Section=$(echo "$p" | cut -f 2 -d '{')
 	Section=$(echo "$Section" | cut -f 1 -d '}')
 	SectionFull=$Section"_full.pdf"
-	SectionComp=$Section"_comp.pdf"
+	SectionComp=$Section"_compact.pdf"
   # echo "$SectionFull"
   # echo "$SectionComp"
 	# File names are:
@@ -73,7 +73,7 @@ while read p; do
 	lualatex --batchmode $ChapterComp
 
 	mv "Chapter-"$1"_full.pdf" $SectionFull
-	mv "Chapter-"$1"_comp.pdf" $SectionComp
+	mv "Chapter-"$1"_compact.pdf" $SectionComp
 	sed -i "3s/$Section/TOINCLUDE/" $ChapterComp
 	sed -i "3s/$Section/TOINCLUDE/" $ChapterFull
 done < tmp.tex
@@ -83,5 +83,5 @@ sed -i '3d' $ChapterFull
 sed -i '3d' $ChapterComp
 # # Restore the pdfs for the chapters.
 mv f.pdf "Chapter-"$1"_full.pdf"
-mv c.pdf "Chapter-"$1"_comp.pdf"
+mv c.pdf "Chapter-"$1"_compact.pdf"
 
