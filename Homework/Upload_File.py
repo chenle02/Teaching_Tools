@@ -5,9 +5,16 @@
 from canvasapi import Canvas
 import sys
 # Canvas API URL
-API_URL = "https://canvas.emory.edu"
+API_URL = "..."
 # Canvas API key
-API_KEY = "6592~MbHxDeuqX9gh1aZeXXVRRzfi2TESzLWWpBtA2KcOvUpIv9qGcZXAr8l7OlFOW83C"
+API_KEY = "..."
+# Edit the course nubmers:
+dictCourses = {
+  "0": 66586,
+  "1": 83240,
+}
+
+
 # Initialize a new Canvas object
 canvas = Canvas(API_URL, API_KEY)
 # Test the course setting
@@ -31,11 +38,6 @@ print("Uploading file: " + filename + "\n"
       + "at position " + position + "\n"
       + "title: " + title)
 # exit(1)
-
-dictCourses = {
-  "0": 66586,
-  "1": 83240,
-}
 
 # Initialize courses
 courses = {}
