@@ -1,0 +1,167 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\RequirePackage{amsthm,amsmath,amssymb,amscd,mathabx}
+\usepackage{fancyhdr,lipsum} % lipsum for filler text
+\usepackage[margin=2.4cm,headheight=10pt]{geometry}
+\usepackage{tikz}
+\usepackage{url}
+\usetikzlibrary{fadings,patterns}
+\tikzset{fading text/.style={}}
+\usetikzlibrary{shapes.misc, positioning}
+
+\usepackage{graphicx}
+\usepackage{subcaption,enumerate}
+\usepackage{amsmath}
+% \usepackage{poker}
+% \setkeys{poker}{inline=symbol}
+\usepackage[misc,clock,geometry]{ifsym}
+
+
+\newcommand{\ud}{\ensuremath{\mathrm{d}}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\Var}{\text{Var}}
+\newcommand{\myEnd}{\hfill $\blacksquare$}
+\usepackage{luacode}
+
+\usepackage{listings}
+% \usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\lstset{language=Java}
+
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{dkgreen},   % comment style
+  stringstyle=\color{mauve},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+}
+
+%opening
+\title{Solutions to HW 1}
+\author{Le Chen}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.5 pt}
+\newcommand{\rmk}[1]{{\vspace{0.5em}\bf\noindent #1.~}}
+\newcommand{\Pm}[2]{{}_{#1}P_{#2}}
+
+% % Set up mdframe for questions.
+\usepackage{xcolor}
+\usepackage[framemethod=tikz]{mdframed}
+\mdfsetup{%
+   middlelinecolor=lightgray,
+   middlelinewidth=2pt,
+   backgroundcolor=red!20,
+   roundcorner=10pt}
+\newenvironment{question}[1][] %
+  {\begin{mdframed}[backgroundcolor=lightgray]\textbf{Question #1}~~~\noindent}%
+  {\end{mdframed}}
+
+% This is the old one.
+% \newenvironment{question}[1][\bigskip\bigskip\unskip]{\par\noindent\textbf{Question #1:}\noindent}{}
+
+
+
+\begin{luacode}
+    dofile("homework.lua")
+    -- arg[2]: number of homework
+    -- arg[3]: Is solution? false , problem, true, solution.
+    -- loadfile("./saveTable.lua")(arg,"hw.table")
+
+
+    hw=2
+    if arg[2] ~= nil then
+      hw = tonumber(arg[2],10)
+    end
+
+    ifsol = false
+    if arg[3] ~= nil then
+      ifsol = true
+    end
+    Homework = wiki2table("./homework.wiki")
+    -- Debug only
+    -- loadfile("./saveTable.lua")(Homework,"SavedTable.table")
+    -- Homework = dofile("SavedTable.table")
+
+\end{luacode}
+
+\begin{document}
+
+\noindent Auburn - STAT 3600 \hfill Probability \& Statistics (I) \newline
+\noindent Instructor: Le Chen \hfill 2021 Fall\newline
+\hrule
+\vspace{5mm}
+\begin{luacode}
+    tex.sprint("\\noindent {\\bfseries Homework} ".. hw .. " \\hfill Due on ".. Homework[hw]["Deadline"])
+\end{luacode}
+\vspace{5mm}
+\hrule
+\noindent
+
+\begin{question}[($\luaexec{tex.sprint(Homework[hw]["Points"])}$ points)]
+Work out the following problems with details:
+\begin{enumerate}
+    \begin{luacode}
+	for i=1,#Homework[hw]["Questions"] do
+	    tex.sprint("\\item ("..Homework[hw]["Questions"][i]["Points"] .. " points) ")
+	    tex.sprint(Homework[hw]["Questions"][i]["Content"])
+	    -- print(Homework[hw]["Questions"][i]["Content"])
+	end
+    \end{luacode}
+\end{enumerate}
+\end{question}
+
+\begin{luacode}
+   if ifsol == true then
+	-- tex.sprint("Now, input solutions here.")
+	file = "Sol_" .. hw ..".tex"
+	lines = lines_from(file)
+	-- lines = dofile("lines.table")
+	for i=1,#lines do
+	    -- tex.sprint(lines[i].."\string\n")
+	    tex.sprint(lines[i].." ")
+	end
+   end
+\end{luacode}
+
+\end{document}

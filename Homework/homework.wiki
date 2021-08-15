@@ -1,0 +1,118 @@
+== HW 1 ==
+*  Points:0
+*  Deadline:Feb. 03 at 6pm
+*  Questions:
+	1 :10 points: 5.2.1
+	2 :10 points: 5.2.3
+== HW 2 ==
+*  Points:60
+*  Deadline:Feb. 10 at 6pm
+*  Questions:
+	1 :10 points: 5.4.6
+	2 :10 points: 5.4.11
+	3 :10 points: 5.4.19
+	4 :10 points: 5.5.1
+	5 :10 points: 5.5.3
+	6 :10 points: 5.5.4
+== HW 3 ==
+*  Points:180
+*  Deadline:Feb. 18 at 6pm
+*  Questions:
+	1 :15 points: 5.6.2
+	2 :15 points: 5.6.4
+	3 :20 points: 5.6.7
+	4 :15 points: 5.6.9
+	5 :15 points: 5.7.2
+	6 :20 points: 5.7.3
+== HW 4 ==
+*  Points:100
+*  Deadline:Feb. 24 at 6pm
+*  Questions:
+	1 :20 points:  5.8.1
+	2 :20 points:  5.8.2
+	3 :20 points:  5.8.4
+	4 :20 points:  5.8.6
+	5 :20 points:  5.8.7
+== HW 5 ==
+*  Points:80
+*  Deadline:Mar. 03 at 6pm
+*  Questions:
+	1 :20 points:  6.2.3
+	2 :10 points:  6.2.9
+	3 :10 points:  6.3.4
+	4 :20 points:  6.3.9
+	5 :10 points:  6.4.9
+	6 :15 points:  6.4.13
+	7 :15 points:  6.4.20
+== HW 6 ==
+*  Points:100
+*  Deadline:Mar. 10 at 6pm
+*  Questions:
+	1 :20 points:  6.5.1
+	2 :20 points:  6.5.2
+	3 :30 points:  6.5.5
+	4 :10 points:  7.3.11
+	5 :10 points:  7.4.12
+	6 :10 points:  7.5.16
+== HW 7 ==
+*  Points:110
+*  Deadline:Mar. 24 at 6pm
+*  Questions:
+	1 :10 points:  9.2.1
+	2 :10 points:  9.2.5
+	3 :10 points:  9.2.15
+	4 :10 points:  9.3.3
+	5 :10 points:  9.3.5
+	6 :10 points:  9.4.6
+	7 :10 points:  9.4.9
+	8 :10 points:  9.5.2
+	9 :10 points:  9.5.5
+	10 :10 points:  9.5.12
+== HW 8 ==
+*  Points:0
+*  Deadline:Mar. 31 at 6pm
+*  Questions:
+== HW 9 ==
+*  Points:40
+*  Deadline:Apr. 07 at 6pm
+*  Questions:
+	1 :20 points:  11.2.3
+	2 :20 points:  11.2.13
+	3 :60 points:  11.2.22
+== HW 10 ==
+*  Points:100
+*  Deadline:Apr. 07 at 6pm
+*  Questions:
+	1:  10 points: 11.3.1
+	2:  10 points: 11.3.6
+	3:  10 points: 11.3.10
+	4:  10 points: 11.3.16
+	5:  20 points: 11.4.1
+	6:  15 points: 11.4.2
+	7:  10 points: 11.4.6
+	8:  15 points: 11.4.7
+== HW 11 ==
+*  Points:100
+*  Deadline:Apr. 15 at 6pm
+*  Questions:
+	1:  20 points: 12.2.1
+	2:  20 points: 12.2.2
+	3:  20 points: 12.2.4
+	4:  15 points: 12.2.7
+	5:  25 points: 12.2.9
+== HW 12 ==
+*  Points:100
+*  Deadline:Apr. 21 at 6pm
+*  Questions:
+	1:  30 points: 13.2.2
+	2:  30 points: 13.2.4
+	3:  40 points: 13.2.12
+== HW 15 ==
+*  Points:100
+*  Deadline:May. 8th at 8am
+*  Questions:
+	1:  20 points: 14.2.1
+	2:  20 points: 14.3.1
+	3:  20 points: 14.4.6
+	4:  20 points: 14.5.1
+	5:  20 points: 14.6.2
