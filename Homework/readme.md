@@ -1,7 +1,12 @@
+# Requirements:
+1. lualatex
+2. lua
+3. python, [canvas api](https://github.com/ucfopen/canvasapi)
+ 
 # Workflow
 1. Edit file [SolX_Template.tex](SolX_Template.tex) for the meta-data, such as school, year, course
 	 number, etc.
-2. Edit [homework.wiki](homework.wiki) using vimwiki syntax to indicate the problem set.
+2. Edit [homework.wiki](homework.wiki) using [vimwiki syntax](https://github.com/vimwiki/vimwiki) to indicate the problem set.
 4. [Prob.sh](Prob.sh): Use this script to generate homework pdf file.
 	*  E.g., `./Prob.sh 3` generates [Problems_HW_3.pdf](Problems_HW_3.pdf)
 6. [Jobs.sh](Jobs.sh): Use this sample script file to schedule jobs.
