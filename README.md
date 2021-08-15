@@ -18,6 +18,7 @@ specific operating systems.
 * [Use _Canvas API_ to access and handle Canvas pages.](#use-_canvas-api_-to-access-and-handle-canvas-pages)
 * [Dark mode of the slides](#dark-mode-of-the-slides)
 * [Video processing and animation](#video-processing-and-animation)
+* [Homework template](#homework-template)
 * [Markdown related](#markdown-related)
 * [Other misc tools](#other-misc-tools)
 
@@ -165,6 +166,9 @@ $ splitvideo.lua mmdd_S# mmdd_S#_content.txt yes
 | [S8-6_S7-Transform.txt](./scripts/S8-6_S7-Transform.txt)     | [S8-6_S7-Transform.mp4](./scripts/S8-6_S7-Transform.mp4)     |
 | [S8-6_S7-Compression.txt](./scripts/S8-6_S7-Compression.txt) | [S8-6_S7-Compression.mp4](./scripts/S8-6_S7-Compression.mp4) |
 
+
+# Homework template
+Here is a template to generate homework assignments:  [Homework](Homework)
 
 # Markdown related
 1. Use [Grip](https://github.com/joeyespo/grip) to see how the Markdown file looks on Github.
