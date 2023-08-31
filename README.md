@@ -94,6 +94,9 @@ $ Rscript weights.r
 13. Finally, if two sections have the same schedule, one may combine courses following the steps here:
     * [Combining Courses: Canvas Training Center](https://stedwards.instructure.com/courses/5655/pages/combining-courses)
 
+Here is a demo:
+* [![asciicast](https://asciinema.org/a/605645.svg)](https://asciinema.org/a/605645)
+
 # Dark mode of the slides
 1. Using [Khan Academic colors](https://support.khanacademy.org/hc/en-us/articles/226885367-How-do-I-recreate-Khan-Academy-videos-):
 
@@ -116,7 +119,7 @@ $ Rscript weights.r
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Section 3-2. Determinants and Matrix Inverses | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-2-Handout.pdf) |
 | Section 3-3. Diagonalization and Eigenvalues  | [presentation](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Presentation.pdf) | [handout](http://math.emory.edu/~lchen41/teaching/2020_Fall/Slides_3-3-Handout.pdf) |
-4. I wrote a lua script [split.lua](textbook/split.lua) to split the textbook ([pdf](textbook/Nicholson-OpenLAWA-2019A.pdf) or [official website](https://lyryx.com/linear-algebra-applications/)) into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides). 
+4. I wrote a lua script [split.lua](textbook/split.lua) to split the textbook ([pdf](textbook/Nicholson-OpenLAWA-2019A.pdf) or [official website](https://lyryx.com/linear-algebra-applications/)) into sections as shown on my [course page](http://math.emory.edu/~lchen41/teaching/2020_Fall/index.html#MATH%20221:%20Linear%20Algebra-2020%20Fall,%20Emory%20University-Text%20and%20slides).
    * Note: you need to have [pdftk](https://en.wikipedia.org/wiki/PDFtk) in order to run split.lua.
    * All book sections are under the folder [textbook](textbook/)
 5. Here are some scripts to generate the skeleton of a course slides: [GenSlides](GenSlides/readme.md)
